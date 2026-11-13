@@ -283,7 +283,7 @@ describe('households', () => {
     const html = await preview.text();
     expect(html).toContain('90001 Victory Lakes Loop');
     expect(html).toContain('90009 Victory Lakes Loop, Unit A');
-    expect(html).toMatch(/in_petition_area<\/code>: 0 → <strong>1/);
+    expect(html).toMatch(/in_petition_area<\/code>: 0 <span class="visually-hidden">changes to<\/span><svg[^>]*>.*?<\/svg> <strong>1/);
     expect(html).toContain('1 Gone Away Lane');
     // nothing written yet
     expect((await db().prepare('SELECT COUNT(*) AS n FROM households').first<{ n: number }>())?.n).toBe(2);

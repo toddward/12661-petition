@@ -50,7 +50,7 @@ export function printPage(opts: {
 </head>
 <body class="print-body">
 <div class="print-toolbar no-print">
-  <p><a href="/admin/export">← Back to admin</a> · ${opts.rows.length} ${blank ? 'addresses' : 'signatures'} on ${total} ${total === 1 ? 'page' : 'pages'}.
+  <p><a href="/admin/export">Back to admin</a> · ${opts.rows.length} ${blank ? 'addresses' : 'signatures'} on ${total} ${total === 1 ? 'page' : 'pages'}.
   Use your browser’s Print command. ${otherVersions.size ? html`<strong>Warning:</strong> some rows were signed under a different text version than the one printed.` : ''}</p>
 </div>
 ${pages.map(

@@ -66,12 +66,12 @@ export function homePage(opts: { settings: Settings; progress: Progress; src: st
       <h2 id="why-h" class="ruled-heading">${star}Why this matters</h2>
       <ul class="reasons">
         <li>
-          <img src="/img/plates/icon-bus-280.png" width="140" height="70" alt="">
+          <picture><source srcset="/img/plates/icon-bus-280-dark.png" media="(prefers-color-scheme: dark)"><img src="/img/plates/icon-bus-280.png" width="140" height="70" alt=""></picture>
           <div><h3>Kids walk here. Buses stop here.</h3>
           <p>Children walk along the loop and wait at the curb for school buses every day.</p></div>
         </li>
         <li>
-          <img src="/img/plates/icon-car-280.png" width="140" height="70" alt="">
+          <picture><source srcset="/img/plates/icon-car-280-dark.png" media="(prefers-color-scheme: dark)"><img src="/img/plates/icon-car-280.png" width="140" height="70" alt=""></picture>
           <div><h3>Traffic moves too fast.</h3>
           <p>Drivers regularly go well over the limit, and neighbors have seen near misses. Speed tables slow every car, every time.</p></div>
         </li>

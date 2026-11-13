@@ -1,3 +1,7 @@
 Barlow and Barlow Semi Condensed
 Copyright 2017 The Barlow Project Authors (https://github.com/jpt/barlow)
 Licensed under the SIL Open Font License, Version 1.1: https://openfontlicense.org
+
+osifont (ISO 3098 lettering), subset to Latin as osifont-subset.woff2
+Copyright the osifont contributors (https://github.com/hikikomori82/osifont)
+Licensed under the GNU LGPL version 3 with font exception (osifont-lgpl3fe.ttf).

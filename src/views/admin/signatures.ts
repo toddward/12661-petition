@@ -12,6 +12,7 @@ import {
 import { formatLocalShort } from '../../lib/time';
 import { RELATIONSHIPS, formatPhone } from '../../lib/validate';
 import type { Html } from '../layout';
+import { arrowLeft, arrowRight, sortDown, sortUp } from '../icons';
 import { adminLayout, qs, statusTag, yesNo } from './layout';
 
 function filterQs(f: SignatureFilters, over: Partial<Record<keyof SignatureFilters, string | number>> = {}): string {
@@ -36,7 +37,7 @@ function sortHeader(f: SignatureFilters, key: string, label: string): Html {
   const active = f.sort === key;
   const nextDir = active && f.dir === 'desc' ? 'asc' : 'desc';
   const aria = active ? raw(` aria-sort="${f.dir === 'asc' ? 'ascending' : 'descending'}"`) : raw('');
-  return html`<th scope="col"${aria}><a href="/admin/signatures${filterQs(f, { sort: key, dir: nextDir, page: '' })}">${label}${active ? (f.dir === 'asc' ? ' ▲' : ' ▼') : ''}</a></th>`;
+  return html`<th scope="col"${aria}><a href="/admin/signatures${filterQs(f, { sort: key, dir: nextDir, page: '' })}">${label}${active ? (f.dir === 'asc' ? sortUp : sortDown) : ''}</a></th>`;
 }
 
 function flagTags(flags: string | null): Html {
@@ -113,8 +114,8 @@ export function signatureListPage(opts: {
   </div>
   ${pages > 1
     ? html`<nav class="pager" aria-label="Pages">
-        ${f.page > 1 ? html`<a href="/admin/signatures${filterQs(f, { page: f.page - 1 })}">← Previous</a>` : ''}
-        ${f.page < pages ? html`<a href="/admin/signatures${filterQs(f, { page: f.page + 1 })}">Next →</a>` : ''}
+        ${f.page > 1 ? html`<a href="/admin/signatures${filterQs(f, { page: f.page - 1 })}" class="back-link">${arrowLeft}Previous</a>` : ''}
+        ${f.page < pages ? html`<a href="/admin/signatures${filterQs(f, { page: f.page + 1 })}" class="back-link">Next${arrowRight}</a>` : ''}
       </nav>`
     : ''}`;
   return adminLayout({ title: 'Signatures', email: opts.email, active: 'signatures', body, flash: opts.flash });
@@ -142,7 +143,7 @@ export function signatureDetailPage(opts: {
   const flags = parseFlags(sig.flags);
   const row = (k: string, v: Html | string | number | null) => html`<div><dt>${k}</dt><dd>${v ?? html`<span class="muted">—</span>`}</dd></div>`;
   const body = html`
-  <p><a href="/admin/signatures">← All signatures</a></p>
+  <p><a class="back-link" href="/admin/signatures">${arrowLeft}All signatures</a></p>
   <div class="cards">
     <section class="card wide">
       <h2>Signature</h2>

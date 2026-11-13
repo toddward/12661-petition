@@ -2,6 +2,7 @@ import { html, raw } from 'hono/html';
 import type { HouseholdRow } from '../../lib/address';
 import type { ImportDiff } from '../../lib/households';
 import type { Html } from '../layout';
+import { arrowLeft, arrowRight } from '../icons';
 import { adminLayout, qs, yesNo } from './layout';
 
 export interface HouseholdListRow extends HouseholdRow {
@@ -91,7 +92,7 @@ export function householdEditPage(opts: { email: string; h: HouseholdRow; error?
   const check = (name: string, label: string, on: number) =>
     html`<div class="field check"><input type="checkbox" id="${name}" name="${name}" value="1"${on ? raw(' checked') : ''}><label for="${name}">${label}</label></div>`;
   const body = html`
-  <p><a href="/admin/households">← All households</a></p>
+  <p><a class="back-link" href="/admin/households">${arrowLeft}All households</a></p>
   <form method="post" action="/admin/households/${h.id}" class="admin-form">
     <div class="field"><label for="street_number">House number</label><input id="street_number" name="street_number" value="${h.street_number}" required maxlength="20"></div>
     <div class="field"><label for="street_name">Street</label><input id="street_name" name="street_name" value="${h.street_name}" required maxlength="100"></div>
@@ -131,7 +132,7 @@ export function importPreviewPage(opts: { email: string; diff: ImportDiff; csv: 
   const d = opts.diff;
   const nothing = !d.added.length && !d.changed.length;
   const body = html`
-  <p><a href="/admin/households/import">← Start over</a></p>
+  <p><a class="back-link" href="/admin/households/import">${arrowLeft}Start over</a></p>
   <div class="cards">
     <section class="card"><h2>New</h2><p class="big-number">${d.added.length}</p></section>
     <section class="card"><h2>Changed</h2><p class="big-number">${d.changed.length}</p></section>
@@ -150,7 +151,7 @@ export function importPreviewPage(opts: { email: string; diff: ImportDiff; csv: 
   ${d.changed.length
     ? html`<section class="panel"><h2>Changes to existing households</h2><div class="table-scroll"><table class="table compact">
         <thead><tr><th scope="col">Line</th><th scope="col">Address</th><th scope="col">Changes</th></tr></thead>
-        <tbody>${d.changed.map((c) => html`<tr><td>${c.row.line}</td><td>${c.existing.label}</td><td>${c.changes.map((ch) => html`<div><code>${ch.field}</code>: ${ch.from || '(blank)'} → <strong>${ch.to || '(blank)'}</strong></div>`)}</td></tr>`)}</tbody>
+        <tbody>${d.changed.map((c) => html`<tr><td>${c.row.line}</td><td>${c.existing.label}</td><td>${c.changes.map((ch) => html`<div><code>${ch.field}</code>: ${ch.from || '(blank)'} <span class="visually-hidden">changes to</span>${arrowRight} <strong>${ch.to || '(blank)'}</strong></div>`)}</td></tr>`)}</tbody>
       </table></div></section>`
     : ''}
   ${d.missing.length

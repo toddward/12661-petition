@@ -48,6 +48,7 @@ export function publicLayout(opts: {
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/fonts/barlow-semi-condensed-600.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/osifont-subset.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/site.css">
 ${(opts.scripts ?? []).map((src) => html`<script src="${src}" defer></script>`)}
 </head>

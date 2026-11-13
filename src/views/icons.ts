@@ -18,3 +18,6 @@ export const arrowRight = svg('<path d="M4 12h15"/><path d="M13 6l6 6-6 6"/>', '
 export const star = svg('<path d="M12 3.2l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7z"/>', 'icon icon-star');
 export const check = svg('<path d="M4.5 12.5l4.5 4.5 10.5-11"/>', 'icon icon-check');
 export const northArrow = svg('<path d="M12 21V4"/><path d="M7 9l5-5 5 5"/><path d="M8 21h8"/>');
+export const arrowLeft = svg('<path d="M20 12H5"/><path d="M11 6l-6 6 6 6"/>', 'icon icon-arrow');
+export const sortUp = svg('<path d="M6 15l6-6 6 6"/>', 'icon icon-sort');
+export const sortDown = svg('<path d="M6 9l6 6 6-6"/>', 'icon icon-sort');

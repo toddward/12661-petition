@@ -4,6 +4,7 @@ import type { PetitionVersion } from '../../lib/petition';
 import { formatLocalShort } from '../../lib/time';
 import { petitionStatement } from '../components';
 import type { Html } from '../layout';
+import { arrowLeft } from '../icons';
 import { adminLayout } from './layout';
 
 export function versionListPage(opts: { email: string; versions: PetitionVersion[]; siteMode: SiteMode; flash?: string | null }): Html {
@@ -38,7 +39,7 @@ export interface VersionFormValues {
 export function versionFormPage(opts: { email: string; values: VersionFormValues; error?: string | null }): Html {
   const v = opts.values;
   const body = html`
-  <p><a href="/admin/petition">← All versions</a></p>
+  <p><a class="back-link" href="/admin/petition">${arrowLeft}All versions</a></p>
   <form method="post" action="/admin/petition" class="admin-form wide">
     <fieldset class="field"><legend>Mode</legend>
       <div class="radio"><input type="radio" id="mode_pledge" name="mode" value="pledge"${v.mode === 'pledge' ? raw(' checked') : ''}><label for="mode_pledge">Pledge (support only, organizer wording)</label></div>
@@ -67,7 +68,7 @@ export function versionDetailPage(opts: {
 }): Html {
   const v = opts.v;
   const body = html`
-  <p><a href="/admin/petition">← All versions</a></p>
+  <p><a class="back-link" href="/admin/petition">${arrowLeft}All versions</a></p>
   <dl class="detail">
     <div><dt>Mode</dt><dd>${v.mode}</dd></div>
     <div><dt>Status</dt><dd>${v.active ? 'active' : v.published_at ? 'retired' : 'draft'}</dd></div>
