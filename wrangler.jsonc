@@ -1,0 +1,40 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "vll-petition",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": { "directory": "./public", "binding": "ASSETS" },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "vll-petition-db",
+      // Replace with the id printed by `npx wrangler d1 create vll-petition-db`.
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "ratelimits": [
+    { "name": "SUBMIT_LIMITER", "namespace_id": "1001", "simple": { "limit": 5, "period": 60 } },
+    { "name": "SEARCH_LIMITER", "namespace_id": "1002", "simple": { "limit": 30, "period": 60 } }
+  ],
+  "triggers": { "crons": ["17 7 * * *"] },
+  "observability": { "enabled": true },
+  "vars": {
+    // Public URL of the site, no trailing slash. Decision §12.3.
+    "SITE_URL": "https://example.invalid",
+    // Turnstile public site key (dashboard → Turnstile). This default is Cloudflare's
+    // always-pass test key; replace it before launch.
+    "TURNSTILE_SITE_KEY": "1x00000000000000000000AA",
+    "ACCESS_TEAM_DOMAIN": "<team>.cloudflareaccess.com",
+    "ACCESS_AUD": "<access app aud tag>",
+    "EMAIL_ENABLED": "false",
+    // "resend" or "postmark". Decision §12.4.
+    "EMAIL_PROVIDER": "resend",
+    // e.g. "Victory Lakes Loop Petition <petition@your-domain>"
+    "EMAIL_FROM": "",
+    "DRAWN_SIGNATURE": "false",
+    "LANG_ES": "false"
+  }
+  // "r2_buckets": [{ "binding": "SIG_BUCKET", "bucket_name": "vll-petition-signatures" }]  // only if DRAWN_SIGNATURE
+}

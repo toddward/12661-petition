@@ -1,0 +1,12 @@
+node_modules/
+.wrangler/
+dist/
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+*.csv
+!test/fixtures/*.csv
+exports/
+*.log
+.DS_Store
+coverage/

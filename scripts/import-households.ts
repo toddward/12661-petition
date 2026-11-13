@@ -1,0 +1,125 @@
+#!/usr/bin/env node
+/**
+ * First seed of the household list: local CSV -> SQL for `wrangler d1 execute`.
+ *
+ *   node --experimental-strip-types scripts/import-households.ts households.csv [households.sql]
+ *   npx wrangler d1 execute vll-petition-db --remote --file households.sql
+ *
+ * CSV columns (header required, any order):
+ *   street_number,street_name,unit,zip,in_petition_area,occupied,notes
+ * in_petition_area / occupied take 1/0, yes/no, true/false or blank. Blank means
+ * "default" for a new home (not in area, occupied) and "keep" for an existing one.
+ *
+ * Re-running is safe: rows are matched on the normalized address (ON CONFLICT ... DO UPDATE).
+ * Never commit the CSV or the generated SQL: both contain the address list.
+ * After the first seed, prefer /admin/households/import, which shows a diff first.
+ */
+import { randomUUID } from 'node:crypto';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { householdLabel, normalizeHousehold } from '../src/lib/address.ts';
+import { parseCsv } from '../src/lib/csv.ts';
+
+const COLUMNS = ['street_number', 'street_name', 'unit', 'zip', 'in_petition_area', 'occupied', 'notes'] as const;
+const CONTROL = /[\u0000-\u001F\u007F-\u009F​-‏‪-‮⁠-⁤﻿]/g;
+
+function clean(v: string | undefined, max = 200): string {
+  return (v ?? '').replace(CONTROL, '').trim().slice(0, max);
+}
+
+function flag(v: string): 0 | 1 | null | 'bad' {
+  const s = v.trim().toLowerCase();
+  if (s === '') return null;
+  if (['1', 'true', 'yes', 'y', 'x'].includes(s)) return 1;
+  if (['0', 'false', 'no', 'n'].includes(s)) return 0;
+  return 'bad';
+}
+
+function sql(v: string | number | null): string {
+  if (v === null) return 'NULL';
+  if (typeof v === 'number') return String(v);
+  return `'${v.replace(/'/g, "''")}'`;
+}
+
+function main(): void {
+  const [input, output = 'households.sql'] = process.argv.slice(2);
+  if (!input) {
+    console.error('Usage: node --experimental-strip-types scripts/import-households.ts <households.csv> [out.sql]');
+    process.exit(2);
+  }
+  const table = parseCsv(readFileSync(input, 'utf8'));
+  const header = (table[0] ?? []).map((h) => h.trim().toLowerCase());
+  const idx = Object.fromEntries(COLUMNS.map((c) => [c, header.indexOf(c)])) as Record<(typeof COLUMNS)[number], number>;
+  for (const c of ['street_number', 'street_name', 'zip'] as const) {
+    if (idx[c] === -1) {
+      console.error(`Missing required column "${c}". Expected: ${COLUMNS.join(',')}`);
+      process.exit(1);
+    }
+  }
+
+  const now = new Date().toISOString();
+  const seen = new Map<string, number>();
+  const statements: string[] = [];
+  const errors: string[] = [];
+
+  table.slice(1).forEach((r, i) => {
+    const line = i + 2;
+    const get = (c: (typeof COLUMNS)[number]) => (idx[c] >= 0 ? clean(r[idx[c]]) : '');
+    const number = get('street_number');
+    const street = get('street_name').replace(/\s+/g, ' ');
+    const unit = get('unit') || null;
+    const zip = get('zip');
+    const area = flag(get('in_petition_area'));
+    const occupied = flag(get('occupied'));
+    const notes = get('notes') || null;
+
+    const problems: string[] = [];
+    if (!/^\d+[A-Za-z]?(-\d+)?$/.test(number)) problems.push('street_number must be a house number');
+    if (!street) problems.push('street_name is required');
+    if (!/^\d{5}(-\d{4})?$/.test(zip)) problems.push('zip must be 5 digits');
+    if (area === 'bad') problems.push('in_petition_area must be 1/0, yes/no or blank');
+    if (occupied === 'bad') problems.push('occupied must be 1/0, yes/no or blank');
+    if (problems.length) {
+      errors.push(`line ${line}: ${problems.join('; ')}`);
+      return;
+    }
+    const normalized = normalizeHousehold(number, street, unit);
+    if (seen.has(normalized)) {
+      errors.push(`line ${line}: same address as line ${seen.get(normalized)}`);
+      return;
+    }
+    seen.set(normalized, line);
+    const label = householdLabel(number, street, unit);
+
+    const updates = [
+      'street_number = excluded.street_number',
+      'street_name = excluded.street_name',
+      'unit = excluded.unit',
+      'zip = excluded.zip',
+      'label = excluded.label',
+      'active = 1',
+      'updated_at = excluded.updated_at',
+    ];
+    if (area !== null) updates.push('in_petition_area = excluded.in_petition_area');
+    if (occupied !== null) updates.push('occupied = excluded.occupied');
+    if (notes !== null) updates.push('notes = excluded.notes');
+
+    statements.push(
+      `INSERT INTO households (id, street_number, street_name, unit, zip, label, normalized, in_petition_area, occupied, active, notes, created_at, updated_at) ` +
+        `VALUES (${[randomUUID(), number, street, unit, zip, label, normalized].map(sql).join(', ')}, ${area ?? 0}, ${occupied ?? 1}, 1, ${sql(notes)}, ${sql(now)}, ${sql(now)}) ` +
+        `ON CONFLICT(normalized) DO UPDATE SET ${updates.join(', ')};`,
+    );
+  });
+
+  writeFileSync(
+    output,
+    `-- Generated by scripts/import-households.ts from ${input.replace(/[\r\n]/g, '')} at ${now}. Do not commit.\n${statements.join('\n')}\n`,
+  );
+  console.error(`Wrote ${statements.length} households to ${output}.`);
+  if (errors.length) {
+    console.error(`Skipped ${errors.length} rows:`);
+    for (const e of errors) console.error(`  ${e}`);
+    process.exitCode = 1;
+  }
+}
+
+main();

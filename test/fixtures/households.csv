@@ -1,0 +1,8 @@
+street_number,street_name,unit,zip,in_petition_area,occupied,notes
+90001,Victory Lakes Loop,,20136,1,1,SYNTHETIC TEST DATA - not real addresses
+90003,Victory Lakes Loop,,20136,1,1,
+90005,Victory Lakes Loop,,20136,1,0,Vacant (synthetic)
+90007,Victory Lakes Lp,,20136,1,1,
+90009,Victory Lakes Loop,A,20136,1,1,
+90002,Example Lake Court,,20136,1,1,
+90004,Example Lake Court,,20136,0,1,
