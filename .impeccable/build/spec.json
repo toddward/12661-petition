@@ -1,0 +1,1734 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-11-13T22:20:43.028Z",
+  "comp": ".impeccable/mocks/comp-1.png",
+  "warnings": [
+    "region plat-caption: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region title-frame: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)",
+    "region legend-frame: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)",
+    "region legend-key: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region why-frame: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)"
+  ],
+  "uncoveredInkCells": [
+    "A0"
+  ],
+  "compSize": {
+    "width": 864,
+    "height": 1872
+  },
+  "aspect": 0.4615,
+  "orientation": "portrait",
+  "palette": [
+    {
+      "hex": "#f7f7f3",
+      "coverage": 0.8866
+    },
+    {
+      "hex": "#0e2955",
+      "coverage": 0.0343
+    },
+    {
+      "hex": "#c6ced8",
+      "coverage": 0.0318
+    },
+    {
+      "hex": "#d24039",
+      "coverage": 0.0296
+    },
+    {
+      "hex": "#8f9aac",
+      "coverage": 0.0177
+    }
+  ],
+  "bands": [
+    {
+      "y": 0.0253,
+      "strength": 0.3288
+    },
+    {
+      "y": 0.0542,
+      "strength": 1
+    },
+    {
+      "y": 0.0939,
+      "strength": 0.2048
+    },
+    {
+      "y": 0.4801,
+      "strength": 0.9481
+    },
+    {
+      "y": 0.509,
+      "strength": 0.7624
+    },
+    {
+      "y": 0.5307,
+      "strength": 0.9642
+    },
+    {
+      "y": 0.574,
+      "strength": 0.6087
+    },
+    {
+      "y": 0.6209,
+      "strength": 0.5811
+    },
+    {
+      "y": 0.6462,
+      "strength": 1
+    },
+    {
+      "y": 0.6679,
+      "strength": 0.2257
+    },
+    {
+      "y": 0.6968,
+      "strength": 0.2941
+    },
+    {
+      "y": 0.7256,
+      "strength": 1
+    },
+    {
+      "y": 0.7473,
+      "strength": 1
+    },
+    {
+      "y": 0.7726,
+      "strength": 1
+    },
+    {
+      "y": 0.8231,
+      "strength": 0.7949
+    },
+    {
+      "y": 0.8484,
+      "strength": 1
+    },
+    {
+      "y": 0.87,
+      "strength": 0.6823
+    },
+    {
+      "y": 0.9061,
+      "strength": 0.6325
+    },
+    {
+      "y": 0.9422,
+      "strength": 0.4694
+    },
+    {
+      "y": 0.9639,
+      "strength": 0.3117
+    },
+    {
+      "y": 0.9856,
+      "strength": 0.4385
+    }
+  ],
+  "regions": [
+    {
+      "id": "brand-mark",
+      "kind": "chrome",
+      "note": "small mark of three wavy navy pen lines (water), icon size",
+      "grid": null,
+      "box": {
+        "x": 0.0116,
+        "y": 0.0118,
+        "w": 0.1204,
+        "h": 0.0353
+      },
+      "px": {
+        "x": 10,
+        "y": 22,
+        "w": 104,
+        "h": 66
+      },
+      "aspect": 1.5758,
+      "palette": [
+        {
+          "hex": "#f7f7f3",
+          "coverage": 0.8845
+        },
+        {
+          "hex": "#0c2055",
+          "coverage": 0.0446
+        },
+        {
+          "hex": "#aeb8c4",
+          "coverage": 0.0249
+        },
+        {
+          "hex": "#8290a4",
+          "coverage": 0.0236
+        },
+        {
+          "hex": "#1c3157",
+          "coverage": 0.0223
+        }
+      ],
+      "detail": {
+        "energy": 18.7068
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "site-name",
+      "kind": "text",
+      "note": "site name in two centered lines of navy engineering capitals: SLOW DOWN ON / VICTORY LAKES LOOP",
+      "grid": null,
+      "box": {
+        "x": 0.2917,
+        "y": 0.0085,
+        "w": 0.3935,
+        "h": 0.0427
+      },
+      "px": {
+        "x": 252,
+        "y": 16,
+        "w": 340,
+        "h": 80
+      },
+      "aspect": 4.25,
+      "palette": [
+        {
+          "hex": "#f7f7f3",
+          "coverage": 0.8205
+        },
+        {
+          "hex": "#0d2552",
+          "coverage": 0.1021
+        },
+        {
+          "hex": "#2f4565",
+          "coverage": 0.0305
+        },
+        {
+          "hex": "#bac2cd",
+          "coverage": 0.0253
+        },
+        {
+          "hex": "#74829a",
+          "coverage": 0.0217
+        }
+      ],
+      "detail": {
+        "energy": 69.6443
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 27,
+          "capHeightPx": 24.2,
+          "inkIsDark": true,
+          "allCaps": true,
+          "advance": 0.6275,
+          "advTall": 0.6275,
+          "advX": null,
+          "gap": 0.1569,
+          "xRatio": null,
+          "stemW": 0.1372,
+          "contrast": 0.9222,
+          "serif": 0.631,
+          "densTall": 0.4366,
+          "densX": null,
+          "weight": 0.4366
+        },
+        "widthClass": "normal",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "nav-sign",
+      "kind": "control",
+      "note": "underlined navy text link Sign, top right",
+      "grid": null,
+      "box": {
+        "x": 0.8704,
+        "y": 0.0182,
+        "w": 0.0949,
+        "h": 0.0246
+      },
+      "px": {
+        "x": 752,
+        "y": 34,
+        "w": 82,
+        "h": 46
+      },
+      "aspect": 1.7826,
+      "palette": [
+        {
+          "hex": "#f7f7f2",
+          "coverage": 0.7691
+        },
+        {
+          "hex": "#bbc0c8",
+          "coverage": 0.0852
+        },
+        {
+          "hex": "#092052",
+          "coverage": 0.065
+        },
+        {
+          "hex": "#2e4163",
+          "coverage": 0.0448
+        },
+        {
+          "hex": "#75839f",
+          "coverage": 0.0359
+        }
+      ],
+      "detail": {
+        "energy": 22.7518
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "header-rule",
+      "kind": "chrome",
+      "note": "full-width navy pen rule under the header",
+      "grid": null,
+      "box": {
+        "x": 0,
+        "y": 0.0534,
+        "w": 1,
+        "h": 0.0043
+      },
+      "px": {
+        "x": 0,
+        "y": 100,
+        "w": 864,
+        "h": 8
+      },
+      "aspect": 108,
+      "palette": [
+        {
+          "hex": "#f8f8f6",
+          "coverage": 0.6667
+        },
+        {
+          "hex": "#091c52",
+          "coverage": 0.3287
+        },
+        {
+          "hex": "#183868",
+          "coverage": 0.0023
+        },
+        {
+          "hex": "#082040",
+          "coverage": 0.0023
+        }
+      ],
+      "detail": {
+        "energy": 69.2255
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": true
+      }
+    },
+    {
+      "id": "plat",
+      "kind": "plate",
+      "note": "pen-drawn subdivision plat: the loop road around a hatched blue lake, lot lines and small house squares on both sides, side streets with cul-de-sacs, a north arrow, a red pencil boundary around the area, street labels",
+      "grid": null,
+      "box": {
+        "x": 0.0162,
+        "y": 0.0609,
+        "w": 0.9722,
+        "h": 0.3905
+      },
+      "px": {
+        "x": 14,
+        "y": 114,
+        "w": 840,
+        "h": 731
+      },
+      "aspect": 1.1491,
+      "palette": [
+        {
+          "hex": "#f7f7f3",
+          "coverage": 0.8972
+        },
+        {
+          "hex": "#c7cfdb",
+          "coverage": 0.0521
+        },
+        {
+          "hex": "#8a97a8",
+          "coverage": 0.0296
+        },
+        {
+          "hex": "#677492",
+          "coverage": 0.0144
+        },
+        {
+          "hex": "#d22727",
+          "coverage": 0.0067
+        }
+      ],
+      "detail": {
+        "energy": 34.5194
+      },
+      "medium": "raster",
+      "plate": "public/img/plates/plat.png",
+      "text": null
+    },
+    {
+      "id": "plat-caption",
+      "kind": "text",
+      "note": "small navy italic caption text: Illustration only. The county sets the real petition area.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.1204,
+        "y": 0.4514,
+        "w": 0.706,
+        "h": 0.0192
+      },
+      "px": {
+        "x": 104,
+        "y": 845,
+        "w": 610,
+        "h": 36
+      },
+      "aspect": 16.9444,
+      "palette": [
+        {
+          "hex": "#f7f7f3",
+          "coverage": 0.9008
+        },
+        {
+          "hex": "#c3cbd1",
+          "coverage": 0.0321
+        },
+        {
+          "hex": "#0e183b",
+          "coverage": 0.0278
+        },
+        {
+          "hex": "#8d97a8",
+          "coverage": 0.0215
+        },
+        {
+          "hex": "#384666",
+          "coverage": 0.0177
+        }
+      ],
+      "detail": {
+        "energy": 45.56
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 46,
+          "capHeightPx": 21,
+          "inkIsDark": true,
+          "allCaps": true,
+          "advance": 0.4054,
+          "advTall": 0.1908,
+          "advX": null,
+          "gap": 0.0954,
+          "xRatio": null,
+          "stemW": 0.1027,
+          "contrast": 0.9457,
+          "serif": 0.848,
+          "densTall": 0.4841,
+          "densX": null,
+          "weight": 0.4841
+        },
+        "widthClass": "compressed",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "title-frame",
+      "kind": "chrome",
+      "note": "title block frame: thin double navy rule rectangle with crossing tick marks at the corners",
+      "grid": null,
+      "container": true,
+      "box": {
+        "x": 0.0301,
+        "y": 0.4712,
+        "w": 0.9444,
+        "h": 0.1816
+      },
+      "px": {
+        "x": 26,
+        "y": 882,
+        "w": 816,
+        "h": 340
+      },
+      "aspect": 2.4,
+      "palette": [
+        {
+          "hex": "#f7f7f3",
+          "coverage": 0.848
+        },
+        {
+          "hex": "#0e2e5d",
+          "coverage": 0.1049
+        },
+        {
+          "hex": "#c8ced8",
+          "coverage": 0.0196
+        },
+        {
+          "hex": "#98a6b5",
+          "coverage": 0.0159
+        },
+        {
+          "hex": "#64778f",
+          "coverage": 0.0115
+        }
+      ],
+      "detail": {
+        "energy": 55.6545
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": true
+      }
+    },
+    {
+      "id": "headline",
+      "kind": "text",
+      "note": "headline in two lines of heavy navy grotesque: Let's slow traffic on / Victory Lakes Loop.",
+      "grid": null,
+      "parentId": "title-frame",
+      "box": {
+        "x": 0.1157,
+        "y": 0.4925,
+        "w": 0.7755,
+        "h": 0.0908
+      },
+      "px": {
+        "x": 100,
+        "y": 922,
+        "w": 670,
+        "h": 170
+      },
+      "aspect": 3.9412,
+      "palette": [
+        {
+          "hex": "#f7f7f3",
+          "coverage": 0.7851
+        },
+        {
+          "hex": "#103363",
+          "coverage": 0.1784
+        },
+        {
+          "hex": "#778294",
+          "coverage": 0.0136
+        },
+        {
+          "hex": "#374e6c",
+          "coverage": 0.0123
+        },
+        {
+          "hex": "#0e1e3e",
+          "coverage": 0.0106
+        }
+      ],
+      "detail": {
+        "energy": 67.5605
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 34,
+          "capHeightPx": 57.5,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.5258,
+          "advTall": 0.431,
+          "advX": 0.5431,
+          "gap": 0.1129,
+          "xRatio": 0.6958,
+          "stemW": 0.1607,
+          "contrast": 1.0463,
+          "serif": 1.0247,
+          "densTall": 0.4975,
+          "densX": 0.5827,
+          "weight": 0.4975
+        },
+        "widthClass": "condensed",
+        "weightClass": "medium",
+        "chosen": {
+          "family": "Acme",
+          "weight": 400,
+          "fontSizePx": 76,
+          "source": "index",
+          "fp": {
+            "lines": 1,
+            "glyphs": 32,
+            "capHeightPx": 56.3,
+            "inkIsDark": true,
+            "allCaps": false,
+            "advance": 0.4798,
+            "advTall": 0.4265,
+            "advX": 0.5509,
+            "gap": 0.1066,
+            "xRatio": 0.6575,
+            "stemW": 0.158,
+            "contrast": 1.0162,
+            "serif": 1.1636,
+            "densTall": 0.497,
+            "densX": 0.5781,
+            "weight": 0.497
+          },
+          "stamp": "ef96d660f5b3"
+        }
+      }
+    },
+    {
+      "id": "subcopy",
+      "kind": "text",
+      "note": "two centered lines of navy humanist sans: Neighbors are asking Prince William County for speed tables so kids can walk and wait safely, with kids underlined",
+      "grid": null,
+      "parentId": "title-frame",
+      "box": {
+        "x": 0.1157,
+        "y": 0.5876,
+        "w": 0.7697,
+        "h": 0.0513
+      },
+      "px": {
+        "x": 100,
+        "y": 1100,
+        "w": 665,
+        "h": 96
+      },
+      "aspect": 6.9271,
+      "palette": [
+        {
+          "hex": "#f7f7f2",
+          "coverage": 0.8744
+        },
+        {
+          "hex": "#0e224e",
+          "coverage": 0.0667
+        },
+        {
+          "hex": "#8593a5",
+          "coverage": 0.0202
+        },
+        {
+          "hex": "#2a4061",
+          "coverage": 0.0197
+        },
+        {
+          "hex": "#b9bfcc",
+          "coverage": 0.0191
+        }
+      ],
+      "detail": {
+        "energy": 69.3394
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 66,
+          "capHeightPx": 25.5,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.4698,
+          "advTall": 0.4698,
+          "advX": 0.4704,
+          "gap": 0.1566,
+          "xRatio": 0.6298,
+          "stemW": 0.1079,
+          "contrast": 0.9533,
+          "serif": 0.4902,
+          "densTall": 0.402,
+          "densX": 0.4773,
+          "weight": 0.402
+        },
+        "widthClass": "condensed",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "legend-frame",
+      "kind": "chrome",
+      "note": "legend box frame: thin double navy rule rectangle with tick marks, a vertical divider in its upper left",
+      "grid": null,
+      "container": true,
+      "box": {
+        "x": 0.0301,
+        "y": 0.6581,
+        "w": 0.9444,
+        "h": 0.1955
+      },
+      "px": {
+        "x": 26,
+        "y": 1232,
+        "w": 816,
+        "h": 366
+      },
+      "aspect": 2.2295,
+      "palette": [
+        {
+          "hex": "#f8f7f3",
+          "coverage": 0.7494
+        },
+        {
+          "hex": "#d24139",
+          "coverage": 0.1804
+        },
+        {
+          "hex": "#0e2352",
+          "coverage": 0.0284
+        },
+        {
+          "hex": "#d46159",
+          "coverage": 0.0257
+        },
+        {
+          "hex": "#213859",
+          "coverage": 0.0161
+        }
+      ],
+      "detail": {
+        "energy": 46.8409
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": true
+      },
+      "flags": [
+        {
+          "id": "painted-pixels",
+          "message": "Looks painted: 22 colours beyond its two main tones and soft shading across 49% of it. Drawn in code, this becomes a flat copy."
+        }
+      ]
+    },
+    {
+      "id": "legend-label",
+      "kind": "text",
+      "note": "underlined small navy capitals LEGEND",
+      "grid": null,
+      "parentId": "legend-frame",
+      "box": {
+        "x": 0.0671,
+        "y": 0.6709,
+        "w": 0.1389,
+        "h": 0.0214
+      },
+      "px": {
+        "x": 58,
+        "y": 1256,
+        "w": 120,
+        "h": 40
+      },
+      "aspect": 3,
+      "palette": [
+        {
+          "hex": "#f7f6f1",
+          "coverage": 0.7736
+        },
+        {
+          "hex": "#112352",
+          "coverage": 0.1014
+        },
+        {
+          "hex": "#3b4f6f",
+          "coverage": 0.058
+        },
+        {
+          "hex": "#bdc6ce",
+          "coverage": 0.0507
+        },
+        {
+          "hex": "#8f9faf",
+          "coverage": 0.0163
+        }
+      ],
+      "detail": {
+        "energy": 35.9296
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 7,
+          "capHeightPx": 17.5,
+          "inkIsDark": true,
+          "allCaps": true,
+          "advance": 0.6556,
+          "advTall": 0.6556,
+          "advX": null,
+          "gap": 0.2708,
+          "xRatio": null,
+          "stemW": 0.1641,
+          "contrast": 1.0365,
+          "serif": 1.4708,
+          "densTall": 0.4968,
+          "densX": null,
+          "weight": 0.4968
+        },
+        "widthClass": "normal",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "legend-key",
+      "kind": "text",
+      "note": "short red rule beside tiny navy capitals STUDY AREA (ILLUSTRATION)",
+      "grid": null,
+      "codeDrawn": true,
+      "parentId": "legend-frame",
+      "box": {
+        "x": 0.0648,
+        "y": 0.6976,
+        "w": 0.2199,
+        "h": 0.0256
+      },
+      "px": {
+        "x": 56,
+        "y": 1306,
+        "w": 190,
+        "h": 48
+      },
+      "aspect": 3.9583,
+      "palette": [
+        {
+          "hex": "#f7f7f2",
+          "coverage": 0.8854
+        },
+        {
+          "hex": "#46546d",
+          "coverage": 0.0423
+        },
+        {
+          "hex": "#92a0ae",
+          "coverage": 0.032
+        },
+        {
+          "hex": "#d0d1dd",
+          "coverage": 0.0217
+        },
+        {
+          "hex": "#111739",
+          "coverage": 0.0186
+        }
+      ],
+      "detail": {
+        "energy": 35.5172
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 12,
+          "capHeightPx": 7.7,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 7.0758,
+          "advTall": null,
+          "advX": 7.0758,
+          "gap": 0.2908,
+          "xRatio": 0.6742,
+          "stemW": 0.2558,
+          "contrast": 1.0061,
+          "serif": 1.1424,
+          "densTall": null,
+          "densX": 0.8788,
+          "weight": 0.8788
+        },
+        "widthClass": "wide",
+        "weightClass": "black"
+      }
+    },
+    {
+      "id": "tally",
+      "kind": "text",
+      "note": "household tally in navy: large numerals 42 of 180, households pledged, and a second line Goal 75%",
+      "grid": null,
+      "parentId": "legend-frame",
+      "box": {
+        "x": 0.419,
+        "y": 0.6741,
+        "w": 0.4919,
+        "h": 0.0481
+      },
+      "px": {
+        "x": 362,
+        "y": 1262,
+        "w": 425,
+        "h": 90
+      },
+      "aspect": 4.7222,
+      "palette": [
+        {
+          "hex": "#f8f7f2",
+          "coverage": 0.9133
+        },
+        {
+          "hex": "#0a1b45",
+          "coverage": 0.0278
+        },
+        {
+          "hex": "#1e385b",
+          "coverage": 0.0257
+        },
+        {
+          "hex": "#c2c9d3",
+          "coverage": 0.019
+        },
+        {
+          "hex": "#8996a9",
+          "coverage": 0.0142
+        }
+      ],
+      "detail": {
+        "energy": 43.7462
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 22,
+          "capHeightPx": 33.5,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.2687,
+          "advTall": 0.3881,
+          "advX": 0.2687,
+          "gap": 0.0896,
+          "xRatio": 0.365,
+          "stemW": 0.0627,
+          "contrast": 0.6205,
+          "serif": 0.5854,
+          "densTall": 0.4038,
+          "densX": 0.4889,
+          "weight": 0.4038
+        },
+        "widthClass": "compressed",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "progress",
+      "kind": "chrome",
+      "note": "outlined navy progress bar with a red diagonal-hatched fill to the current share and a thin tick at 75%",
+      "grid": null,
+      "parentId": "legend-frame",
+      "box": {
+        "x": 0.0741,
+        "y": 0.7249,
+        "w": 0.8495,
+        "h": 0.0224
+      },
+      "px": {
+        "x": 64,
+        "y": 1357,
+        "w": 734,
+        "h": 42
+      },
+      "aspect": 17.4762,
+      "palette": [
+        {
+          "hex": "#f6f6f0",
+          "coverage": 0.6384
+        },
+        {
+          "hex": "#d5584c",
+          "coverage": 0.1379
+        },
+        {
+          "hex": "#96a2b3",
+          "coverage": 0.0918
+        },
+        {
+          "hex": "#df7e72",
+          "coverage": 0.0725
+        },
+        {
+          "hex": "#617290",
+          "coverage": 0.0593
+        }
+      ],
+      "detail": {
+        "energy": 69.5448
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "flags": [
+        {
+          "id": "painted-pixels",
+          "message": "Looks painted: 41 colours beyond its two main tones and soft shading across 48% of it. Drawn in code, this becomes a flat copy."
+        }
+      ]
+    },
+    {
+      "id": "progress-scale",
+      "kind": "text",
+      "note": "small navy scale labels under the bar: 0%, 50%, 75% (GOAL), 100%",
+      "grid": null,
+      "parentId": "legend-frame",
+      "box": {
+        "x": 0.0648,
+        "y": 0.75,
+        "w": 0.8796,
+        "h": 0.0171
+      },
+      "px": {
+        "x": 56,
+        "y": 1404,
+        "w": 760,
+        "h": 32
+      },
+      "aspect": 23.75,
+      "palette": [
+        {
+          "hex": "#f8f8f5",
+          "coverage": 0.9638
+        },
+        {
+          "hex": "#1c2c4a",
+          "coverage": 0.0123
+        },
+        {
+          "hex": "#c3c9d1",
+          "coverage": 0.0112
+        },
+        {
+          "hex": "#4b5a74",
+          "coverage": 0.0072
+        },
+        {
+          "hex": "#778797",
+          "coverage": 0.0054
+        }
+      ],
+      "detail": {
+        "energy": 18.673
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 18,
+          "capHeightPx": 15.1,
+          "inkIsDark": true,
+          "allCaps": true,
+          "advance": 0.598,
+          "advTall": 0.598,
+          "advX": null,
+          "gap": 0.1993,
+          "xRatio": null,
+          "stemW": 0.1455,
+          "contrast": 0.8597,
+          "serif": 1.1068,
+          "densTall": 0.5106,
+          "densX": null,
+          "weight": 0.5106
+        },
+        "widthClass": "condensed",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "cta",
+      "kind": "control",
+      "note": "primary button, vermilion fill with a navy-free white label SIGN THE PLEDGE and a right arrow, slightly rounded",
+      "grid": null,
+      "parentId": "legend-frame",
+      "box": {
+        "x": 0.081,
+        "y": 0.7708,
+        "w": 0.8403,
+        "h": 0.0513
+      },
+      "px": {
+        "x": 70,
+        "y": 1443,
+        "w": 726,
+        "h": 96
+      },
+      "aspect": 7.5625,
+      "palette": [
+        {
+          "hex": "#d34039",
+          "coverage": 0.6578
+        },
+        {
+          "hex": "#f8f5f1",
+          "coverage": 0.1366
+        },
+        {
+          "hex": "#d9645a",
+          "coverage": 0.1023
+        },
+        {
+          "hex": "#b1120c",
+          "coverage": 0.0522
+        },
+        {
+          "hex": "#eac6bf",
+          "coverage": 0.0511
+        }
+      ],
+      "detail": {
+        "energy": 56.7657
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "cta-note",
+      "kind": "text",
+      "note": "navy line under the button: About 2 minutes. One per household.",
+      "grid": null,
+      "parentId": "legend-frame",
+      "box": {
+        "x": 0.2176,
+        "y": 0.8243,
+        "w": 0.5613,
+        "h": 0.0235
+      },
+      "px": {
+        "x": 188,
+        "y": 1543,
+        "w": 485,
+        "h": 44
+      },
+      "aspect": 11.0227,
+      "palette": [
+        {
+          "hex": "#f7f7f0",
+          "coverage": 0.8979
+        },
+        {
+          "hex": "#aeb5c2",
+          "coverage": 0.0282
+        },
+        {
+          "hex": "#0a194a",
+          "coverage": 0.0269
+        },
+        {
+          "hex": "#76859b",
+          "coverage": 0.0248
+        },
+        {
+          "hex": "#3a4f6e",
+          "coverage": 0.0222
+        }
+      ],
+      "detail": {
+        "energy": 57.2686
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 27,
+          "capHeightPx": 23.3,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.4504,
+          "advTall": 0.4933,
+          "advX": 0.4504,
+          "gap": 0.1287,
+          "xRatio": 0.5928,
+          "stemW": 0.1121,
+          "contrast": 0.9151,
+          "serif": 1.1145,
+          "densTall": 0.4308,
+          "densX": 0.5399,
+          "weight": 0.4308
+        },
+        "widthClass": "condensed",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "why-heading",
+      "kind": "text",
+      "note": "section heading with a small outlined star: Why this matters, heavy navy grotesque, underlined by a navy rule",
+      "grid": null,
+      "parentId": "why-frame",
+      "box": {
+        "x": 0.0648,
+        "y": 0.8707,
+        "w": 0.544,
+        "h": 0.0353
+      },
+      "px": {
+        "x": 56,
+        "y": 1630,
+        "w": 470,
+        "h": 66
+      },
+      "aspect": 7.1212,
+      "palette": [
+        {
+          "hex": "#f7f7f2",
+          "coverage": 0.8042
+        },
+        {
+          "hex": "#123160",
+          "coverage": 0.1328
+        },
+        {
+          "hex": "#4c617f",
+          "coverage": 0.0272
+        },
+        {
+          "hex": "#0a1c5c",
+          "coverage": 0.0193
+        },
+        {
+          "hex": "#9ea9b7",
+          "coverage": 0.0166
+        }
+      ],
+      "detail": {
+        "energy": 75.7324
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 16,
+          "capHeightPx": 38.5,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.4675,
+          "advTall": 0.4935,
+          "advX": 0.4935,
+          "gap": 0.1299,
+          "xRatio": 0.6272,
+          "stemW": 0.1407,
+          "contrast": 1.1102,
+          "serif": 1.0779,
+          "densTall": 0.5237,
+          "densX": 0.5812,
+          "weight": 0.5237
+        },
+        "widthClass": "condensed",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "icon-bus",
+      "kind": "plate",
+      "note": "small navy pen drawing of a school bus with two walking children",
+      "grid": null,
+      "parentId": "why-frame",
+      "box": {
+        "x": 0.0602,
+        "y": 0.9145,
+        "w": 0.162,
+        "h": 0.0374
+      },
+      "px": {
+        "x": 52,
+        "y": 1712,
+        "w": 140,
+        "h": 70
+      },
+      "aspect": 2,
+      "palette": [
+        {
+          "hex": "#f7f6f1",
+          "coverage": 0.7721
+        },
+        {
+          "hex": "#10224f",
+          "coverage": 0.0839
+        },
+        {
+          "hex": "#c4cad4",
+          "coverage": 0.0535
+        },
+        {
+          "hex": "#8795a6",
+          "coverage": 0.0507
+        },
+        {
+          "hex": "#364c6f",
+          "coverage": 0.0397
+        }
+      ],
+      "detail": {
+        "energy": 40.9855
+      },
+      "medium": "raster",
+      "plate": "public/img/plates/icon-bus.png",
+      "text": null
+    },
+    {
+      "id": "why-item-1",
+      "kind": "text",
+      "note": "reason one in navy: bold line Kids walk here. Buses stop here. then two smaller lines",
+      "grid": null,
+      "parentId": "why-frame",
+      "box": {
+        "x": 0.2685,
+        "y": 0.9092,
+        "w": 0.5324,
+        "h": 0.0491
+      },
+      "px": {
+        "x": 232,
+        "y": 1702,
+        "w": 460,
+        "h": 92
+      },
+      "aspect": 5,
+      "palette": [
+        {
+          "hex": "#f7f7f1",
+          "coverage": 0.8822
+        },
+        {
+          "hex": "#c6cbd4",
+          "coverage": 0.0347
+        },
+        {
+          "hex": "#243655",
+          "coverage": 0.0288
+        },
+        {
+          "hex": "#0b163e",
+          "coverage": 0.0277
+        },
+        {
+          "hex": "#8e99a9",
+          "coverage": 0.0266
+        }
+      ],
+      "detail": {
+        "energy": 57.1045
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 71,
+          "capHeightPx": 14.8,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.503,
+          "advTall": 0.4764,
+          "advX": 0.503,
+          "gap": 0.1361,
+          "xRatio": 0.6465,
+          "stemW": 0.1404,
+          "contrast": 0.9853,
+          "serif": 0.4727,
+          "densTall": 0.458,
+          "densX": 0.567,
+          "weight": 0.458
+        },
+        "widthClass": "condensed",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "icon-car",
+      "kind": "plate",
+      "note": "small navy pen drawing of a car with speed lines",
+      "grid": null,
+      "parentId": "why-frame",
+      "box": {
+        "x": 0.0532,
+        "y": 0.9647,
+        "w": 0.1389,
+        "h": 0.0321
+      },
+      "px": {
+        "x": 46,
+        "y": 1806,
+        "w": 120,
+        "h": 60
+      },
+      "aspect": 2,
+      "palette": [
+        {
+          "hex": "#f7f7f2",
+          "coverage": 0.8117
+        },
+        {
+          "hex": "#a8b4c2",
+          "coverage": 0.0557
+        },
+        {
+          "hex": "#465a7c",
+          "coverage": 0.0477
+        },
+        {
+          "hex": "#253e67",
+          "coverage": 0.0438
+        },
+        {
+          "hex": "#6c8096",
+          "coverage": 0.0411
+        }
+      ],
+      "detail": {
+        "energy": 29.4599
+      },
+      "medium": "raster",
+      "plate": "public/img/plates/icon-car.png",
+      "text": null
+    },
+    {
+      "id": "why-item-2",
+      "kind": "text",
+      "note": "reason two in navy: bold line Traffic moves too fast. then smaller lines",
+      "grid": null,
+      "parentId": "why-frame",
+      "box": {
+        "x": 0.2685,
+        "y": 0.9615,
+        "w": 0.5208,
+        "h": 0.0385
+      },
+      "px": {
+        "x": 232,
+        "y": 1800,
+        "w": 450,
+        "h": 72
+      },
+      "aspect": 6.25,
+      "palette": [
+        {
+          "hex": "#f7f6f2",
+          "coverage": 0.8529
+        },
+        {
+          "hex": "#c1c8d2",
+          "coverage": 0.0437
+        },
+        {
+          "hex": "#263854",
+          "coverage": 0.0411
+        },
+        {
+          "hex": "#0a173e",
+          "coverage": 0.0322
+        },
+        {
+          "hex": "#8f98a9",
+          "coverage": 0.0302
+        }
+      ],
+      "detail": {
+        "energy": 57.1534
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 61,
+          "capHeightPx": 17.2,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.449,
+          "advTall": 0.4251,
+          "advX": 0.4501,
+          "gap": 0.1036,
+          "xRatio": 0.6337,
+          "stemW": 0.139,
+          "contrast": 0.9959,
+          "serif": 1.0198,
+          "densTall": 0.4543,
+          "densX": 0.5781,
+          "weight": 0.4543
+        },
+        "widthClass": "condensed",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "ground",
+      "kind": "texture",
+      "note": "drafting film ground: off-white paper with a very faint blue-gray grid, no ink",
+      "grid": null,
+      "parentId": "why-frame",
+      "box": {
+        "x": 0.8148,
+        "y": 0.9145,
+        "w": 0.1296,
+        "h": 0.0342
+      },
+      "px": {
+        "x": 704,
+        "y": 1712,
+        "w": 112,
+        "h": 64
+      },
+      "aspect": 1.75,
+      "palette": [
+        {
+          "hex": "#f8f8f5",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 1.5747
+      },
+      "medium": "raster",
+      "plate": "public/img/plates/ground.png",
+      "text": null
+    },
+    {
+      "id": "legend-divider",
+      "kind": "chrome",
+      "note": "thin vertical navy rule splitting the legend key from the tally",
+      "grid": null,
+      "parentId": "legend-frame",
+      "box": {
+        "x": 0.3796,
+        "y": 0.6645,
+        "w": 0.0093,
+        "h": 0.062
+      },
+      "px": {
+        "x": 328,
+        "y": 1244,
+        "w": 8,
+        "h": 116
+      },
+      "aspect": 0.069,
+      "palette": [
+        {
+          "hex": "#f8f8f8",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 2.6639
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": true
+      }
+    },
+    {
+      "id": "why-frame",
+      "kind": "chrome",
+      "note": "section frame: thin navy rules with tick marks, open at the bottom",
+      "grid": null,
+      "container": true,
+      "box": {
+        "x": 0.0324,
+        "y": 0.86,
+        "w": 0.9421,
+        "h": 0.14
+      },
+      "px": {
+        "x": 28,
+        "y": 1610,
+        "w": 814,
+        "h": 262
+      },
+      "aspect": 3.1069,
+      "palette": [
+        {
+          "hex": "#f7f7f2",
+          "coverage": 0.8916
+        },
+        {
+          "hex": "#102752",
+          "coverage": 0.0492
+        },
+        {
+          "hex": "#8c98a9",
+          "coverage": 0.0235
+        },
+        {
+          "hex": "#bdc4cf",
+          "coverage": 0.0183
+        },
+        {
+          "hex": "#5a6b85",
+          "coverage": 0.0174
+        }
+      ],
+      "detail": {
+        "energy": 49.5853
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": true
+      }
+    },
+    {
+      "id": "why-rule",
+      "kind": "chrome",
+      "note": "dashed navy rule between the two reasons",
+      "grid": null,
+      "parentId": "why-frame",
+      "box": {
+        "x": 0.0532,
+        "y": 0.9562,
+        "w": 0.8843,
+        "h": 0.0053
+      },
+      "px": {
+        "x": 46,
+        "y": 1790,
+        "w": 764,
+        "h": 10
+      },
+      "aspect": 76.4,
+      "palette": [
+        {
+          "hex": "#f7f7f0",
+          "coverage": 0.8682
+        },
+        {
+          "hex": "#2f436d",
+          "coverage": 0.0382
+        },
+        {
+          "hex": "#808c9e",
+          "coverage": 0.0382
+        },
+        {
+          "hex": "#0e2552",
+          "coverage": 0.0332
+        },
+        {
+          "hex": "#576580",
+          "coverage": 0.0221
+        }
+      ],
+      "detail": {
+        "energy": 16.5495
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    }
+  ],
+  "compSha256": "5a6c270b1cd6a354b7eb1df9c7f13da7032fcbf58bec801e952d5a209b3cdb3e",
+  "regionsSource": {
+    "path": ".impeccable/build/regions.json",
+    "sha256": "985b8636295297b76565e68a8971f0ab896af31025ac0de74ef4efc92489e134"
+  }
+}

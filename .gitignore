@@ -10,3 +10,9 @@ exports/
 *.log
 .DS_Store
 coverage/
+.impeccable/config.local.json
+# impeccable working files (large, regenerable); spec/regions/state JSON stay tracked
+.impeccable/build/map-inspections/
+.impeccable/build/plates-work/
+.impeccable/build/font-match/
+.impeccable/build/comp-grid.png

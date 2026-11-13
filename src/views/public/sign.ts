@@ -10,6 +10,7 @@ import {
   type SignFormValues,
 } from '../../lib/validate';
 import { petitionStatement } from '../components';
+import { arrowRight } from '../icons';
 import { contactLinks, publicLayout, type Html } from '../layout';
 
 export interface SignFormProps {
@@ -136,7 +137,7 @@ export function signFormPage(p: SignFormProps): Html {
   ${errorSummary(errors, p.notice)}
   ${petitionStatement(v)}
 
-  <form method="post" action="/sign" class="sign-form" novalidate>
+  <form method="post" action="/sign" class="frame sign-form" novalidate>
     <input type="hidden" name="petition_version_id" value="${v.id}">
     <input type="hidden" name="form_started_at" value="${p.formToken}">
     ${p.src ? html`<input type="hidden" name="src" value="${p.src}">` : ''}
@@ -219,7 +220,7 @@ export function signFormPage(p: SignFormProps): Html {
 
     ${privacyShortNotice()}
 
-    <button type="submit" class="button button-primary button-block">Sign the ${noun}</button>
+    <button type="submit" class="button button-primary button-block">Sign the ${noun}${arrowRight}</button>
 
     <p class="small paper-fallback">Having trouble? Email or call the organizer and we’ll help you sign on paper: ${contactLinks(s)}.</p>
   </form>
@@ -245,7 +246,7 @@ export function signUnavailablePage(settings: Settings, reason: 'closed' | 'no_v
     title: reason === 'closed' ? 'Signatures are closed' : 'Not open yet',
     settings,
     active: 'sign',
-    body: html`<div class="wrap narrow page-pad"><h1>${reason === 'closed' ? 'Signatures are closed' : 'Signing is not open yet'}</h1>${msg}
-      <p>Questions? Contact the organizer: ${contactLinks(settings)}.</p></div>`,
+    body: html`<div class="wrap narrow page-pad"><div class="sheet"><h1>${reason === 'closed' ? 'Signatures are closed' : 'Signing is not open yet'}</h1>${msg}
+      <p>Questions? Contact the organizer: ${contactLinks(settings)}.</p></div></div>`,
   });
 }

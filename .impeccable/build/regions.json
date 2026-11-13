@@ -1,0 +1,316 @@
+{
+ "regions": [
+  {
+   "id": "brand-mark",
+   "kind": "chrome",
+   "pixelBox": {
+    "x": 10,
+    "y": 22,
+    "w": 104,
+    "h": 66
+   },
+   "note": "small mark of three wavy navy pen lines (water), icon size"
+  },
+  {
+   "id": "site-name",
+   "kind": "text",
+   "pixelBox": {
+    "x": 252,
+    "y": 16,
+    "w": 340,
+    "h": 80
+   },
+   "note": "site name in two centered lines of navy engineering capitals: SLOW DOWN ON / VICTORY LAKES LOOP"
+  },
+  {
+   "id": "nav-sign",
+   "kind": "control",
+   "pixelBox": {
+    "x": 752,
+    "y": 34,
+    "w": 82,
+    "h": 46
+   },
+   "note": "underlined navy text link Sign, top right"
+  },
+  {
+   "id": "header-rule",
+   "kind": "chrome",
+   "pixelBox": {
+    "x": 0,
+    "y": 100,
+    "w": 864,
+    "h": 8
+   },
+   "note": "full-width navy pen rule under the header"
+  },
+  {
+   "id": "plat",
+   "kind": "plate",
+   "pixelBox": {
+    "x": 14,
+    "y": 114,
+    "w": 840,
+    "h": 731
+   },
+   "note": "pen-drawn subdivision plat: the loop road around a hatched blue lake, lot lines and small house squares on both sides, side streets with cul-de-sacs, a north arrow, a red pencil boundary around the area, street labels",
+   "plate": "public/img/plates/plat.png"
+  },
+  {
+   "id": "plat-caption",
+   "kind": "text",
+   "pixelBox": {
+    "x": 104,
+    "y": 845,
+    "w": 610,
+    "h": 36
+   },
+   "note": "small navy italic caption text: Illustration only. The county sets the real petition area.",
+   "codeDrawn": true
+  },
+  {
+   "id": "title-frame",
+   "kind": "chrome",
+   "container": true,
+   "pixelBox": {
+    "x": 26,
+    "y": 882,
+    "w": 816,
+    "h": 340
+   },
+   "note": "title block frame: thin double navy rule rectangle with crossing tick marks at the corners"
+  },
+  {
+   "id": "headline",
+   "kind": "text",
+   "parentId": "title-frame",
+   "pixelBox": {
+    "x": 100,
+    "y": 922,
+    "w": 670,
+    "h": 170
+   },
+   "note": "headline in two lines of heavy navy grotesque: Let's slow traffic on / Victory Lakes Loop."
+  },
+  {
+   "id": "subcopy",
+   "kind": "text",
+   "parentId": "title-frame",
+   "pixelBox": {
+    "x": 100,
+    "y": 1100,
+    "w": 665,
+    "h": 96
+   },
+   "note": "two centered lines of navy humanist sans: Neighbors are asking Prince William County for speed tables so kids can walk and wait safely, with kids underlined"
+  },
+  {
+   "id": "legend-frame",
+   "kind": "chrome",
+   "container": true,
+   "pixelBox": {
+    "x": 26,
+    "y": 1232,
+    "w": 816,
+    "h": 366
+   },
+   "note": "legend box frame: thin double navy rule rectangle with tick marks, a vertical divider in its upper left"
+  },
+  {
+   "id": "legend-label",
+   "kind": "text",
+   "parentId": "legend-frame",
+   "pixelBox": {
+    "x": 58,
+    "y": 1256,
+    "w": 120,
+    "h": 40
+   },
+   "note": "underlined small navy capitals LEGEND"
+  },
+  {
+   "id": "legend-key",
+   "kind": "text",
+   "parentId": "legend-frame",
+   "pixelBox": {
+    "x": 56,
+    "y": 1306,
+    "w": 190,
+    "h": 48
+   },
+   "note": "short red rule beside tiny navy capitals STUDY AREA (ILLUSTRATION)",
+   "codeDrawn": true
+  },
+  {
+   "id": "tally",
+   "kind": "text",
+   "parentId": "legend-frame",
+   "pixelBox": {
+    "x": 362,
+    "y": 1262,
+    "w": 425,
+    "h": 90
+   },
+   "note": "household tally in navy: large numerals 42 of 180, households pledged, and a second line Goal 75%"
+  },
+  {
+   "id": "progress",
+   "kind": "chrome",
+   "parentId": "legend-frame",
+   "pixelBox": {
+    "x": 64,
+    "y": 1357,
+    "w": 734,
+    "h": 42
+   },
+   "note": "outlined navy progress bar with a red diagonal-hatched fill to the current share and a thin tick at 75%"
+  },
+  {
+   "id": "progress-scale",
+   "kind": "text",
+   "parentId": "legend-frame",
+   "pixelBox": {
+    "x": 56,
+    "y": 1404,
+    "w": 760,
+    "h": 32
+   },
+   "note": "small navy scale labels under the bar: 0%, 50%, 75% (GOAL), 100%"
+  },
+  {
+   "id": "cta",
+   "kind": "control",
+   "parentId": "legend-frame",
+   "pixelBox": {
+    "x": 70,
+    "y": 1443,
+    "w": 726,
+    "h": 96
+   },
+   "note": "primary button, vermilion fill with a navy-free white label SIGN THE PLEDGE and a right arrow, slightly rounded"
+  },
+  {
+   "id": "cta-note",
+   "kind": "text",
+   "parentId": "legend-frame",
+   "pixelBox": {
+    "x": 188,
+    "y": 1543,
+    "w": 485,
+    "h": 44
+   },
+   "note": "navy line under the button: About 2 minutes. One per household."
+  },
+  {
+   "id": "why-heading",
+   "kind": "text",
+   "pixelBox": {
+    "x": 56,
+    "y": 1630,
+    "w": 470,
+    "h": 66
+   },
+   "note": "section heading with a small outlined star: Why this matters, heavy navy grotesque, underlined by a navy rule",
+   "parentId": "why-frame"
+  },
+  {
+   "id": "icon-bus",
+   "kind": "plate",
+   "pixelBox": {
+    "x": 52,
+    "y": 1712,
+    "w": 140,
+    "h": 70
+   },
+   "note": "small navy pen drawing of a school bus with two walking children",
+   "parentId": "why-frame",
+   "plate": "public/img/plates/icon-bus.png"
+  },
+  {
+   "id": "why-item-1",
+   "kind": "text",
+   "pixelBox": {
+    "x": 232,
+    "y": 1702,
+    "w": 460,
+    "h": 92
+   },
+   "note": "reason one in navy: bold line Kids walk here. Buses stop here. then two smaller lines",
+   "parentId": "why-frame"
+  },
+  {
+   "id": "icon-car",
+   "kind": "plate",
+   "pixelBox": {
+    "x": 46,
+    "y": 1806,
+    "w": 120,
+    "h": 60
+   },
+   "note": "small navy pen drawing of a car with speed lines",
+   "parentId": "why-frame",
+   "plate": "public/img/plates/icon-car.png"
+  },
+  {
+   "id": "why-item-2",
+   "kind": "text",
+   "pixelBox": {
+    "x": 232,
+    "y": 1800,
+    "w": 450,
+    "h": 72
+   },
+   "note": "reason two in navy: bold line Traffic moves too fast. then smaller lines",
+   "parentId": "why-frame"
+  },
+  {
+   "id": "ground",
+   "kind": "texture",
+   "pixelBox": {
+    "x": 704,
+    "y": 1712,
+    "w": 112,
+    "h": 64
+   },
+   "note": "drafting film ground: off-white paper with a very faint blue-gray grid, no ink",
+   "parentId": "why-frame",
+   "plate": "public/img/plates/ground.png"
+  },
+  {
+   "id": "legend-divider",
+   "kind": "chrome",
+   "parentId": "legend-frame",
+   "pixelBox": {
+    "x": 328,
+    "y": 1244,
+    "w": 8,
+    "h": 116
+   },
+   "note": "thin vertical navy rule splitting the legend key from the tally"
+  },
+  {
+   "id": "why-frame",
+   "kind": "chrome",
+   "container": true,
+   "pixelBox": {
+    "x": 28,
+    "y": 1610,
+    "w": 814,
+    "h": 262
+   },
+   "note": "section frame: thin navy rules with tick marks, open at the bottom"
+  },
+  {
+   "id": "why-rule",
+   "kind": "chrome",
+   "parentId": "why-frame",
+   "pixelBox": {
+    "x": 46,
+    "y": 1790,
+    "w": 764,
+    "h": 10
+   },
+   "note": "dashed navy rule between the two reasons"
+  }
+ ]
+}

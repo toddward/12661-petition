@@ -1,15 +1,14 @@
 import { html, raw } from 'hono/html';
 import type { HtmlEscapedString } from 'hono/utils/html';
 import type { Settings } from '../lib/settings';
+import { markIcon } from './icons';
 
 export type Html = HtmlEscapedString | Promise<HtmlEscapedString>;
 
 export const SITE_NAME = 'Slow Down on Victory Lakes Loop';
 
-/** Small inline brand mark: a raised speed table seen from the side. Decorative. */
-export const brandMark = raw(
-  `<svg class="brand-mark" viewBox="0 0 40 24" width="40" height="24" aria-hidden="true" focusable="false"><path d="M2 19h8l5-7h10l5 7h8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M17 15.5h2.5M21.5 15.5H24" stroke="#f2b705" stroke-width="2.5" stroke-linecap="round"/></svg>`,
-);
+/** Kept for the admin header. */
+export const brandMark = markIcon;
 
 export function contactLinks(s: Settings): Html {
   const parts: Html[] = [];
@@ -28,13 +27,14 @@ export function publicLayout(opts: {
   description?: string;
   scripts?: string[];
   active?: 'home' | 'sign' | 'faq' | 'privacy';
+  /** Extra class on <body>, e.g. "page-home". */
+  bodyClass?: string;
 }): Html {
   const { title, settings: s, body, active } = opts;
   const desc =
     opts.description ??
     'Neighbors asking Prince William County for speed tables on Victory Lakes Loop. A resident-run petition.';
-  const navItem = (href: string, label: string, key: typeof active) =>
-    html`<a href="${href}"${key === active ? raw(' aria-current="page"') : ''}>${label}</a>`;
+  const current = (key: typeof active) => (key === active ? raw(' aria-current="page"') : raw(''));
   return html`<!doctype html>
 <html lang="en">
 <head>
@@ -43,30 +43,35 @@ export function publicLayout(opts: {
 <title>${title} · ${SITE_NAME}</title>
 <meta name="description" content="${desc}">
 <meta name="color-scheme" content="light dark">
-<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f7f7f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1a27" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/barlow-semi-condensed-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/site.css">
 ${(opts.scripts ?? []).map((src) => html`<script src="${src}" defer></script>`)}
 </head>
-<body>
+<body${opts.bodyClass ? html` class="${opts.bodyClass}"` : ''}>
 <a class="skip-link" href="#main">Skip to main content</a>
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="/">${brandMark}<span>Slow Down on<br><strong>Victory Lakes Loop</strong></span></a>
-    <nav aria-label="Main">
-      ${navItem('/faq', 'FAQ', 'faq')}
-      ${active !== 'sign' ? html`<a class="nav-cta" href="/sign">Sign</a>` : ''}
-    </nav>
+    <a class="brand" href="/" aria-label="${SITE_NAME}, home">${markIcon}</a>
+    <a class="site-name" href="/"${current('home')}><span>Slow down on</span> <span>Victory Lakes Loop</span></a>
+    ${active === 'sign' ? html`<span class="header-spacer" aria-hidden="true"></span>` : html`<a class="header-sign" href="/sign">Sign</a>`}
   </div>
 </header>
 <main id="main" tabindex="-1">
 ${body}
 </main>
 <footer class="site-footer">
-  <div class="wrap">
-    <p><strong>A resident-run site.</strong> This is not an official site of Prince William County, VDOT or the HOA.
-    Run by ${s.organizer_name}, a Victory Lakes neighbor: ${contactLinks(s)}.</p>
-    <p class="footer-links">${navItem('/privacy', 'Privacy notice', 'privacy')} ${navItem('/faq', 'FAQ', 'faq')} <a href="/">Home</a></p>
+  <div class="wrap footer-inner">
+    <p><strong>A resident-run site.</strong> Not an official site of Prince William County, VDOT or the HOA.
+    Organized by ${s.organizer_name}, a Victory Lakes neighbor: ${contactLinks(s)}.</p>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="/"${current('home')}>Home</a>
+      <a href="/faq"${current('faq')}>Questions</a>
+      <a href="/privacy"${current('privacy')}>Privacy notice</a>
+    </nav>
   </div>
 </footer>
 </body>
@@ -77,6 +82,6 @@ export function simplePage(settings: Settings, title: string, message: Html, ext
   return publicLayout({
     title,
     settings,
-    body: html`<div class="wrap narrow page-pad"><h1>${title}</h1>${message}${extra ?? ''}</div>`,
+    body: html`<div class="wrap narrow page-pad"><div class="sheet"><h1>${title}</h1>${message}${extra ?? ''}</div></div>`,
   });
 }

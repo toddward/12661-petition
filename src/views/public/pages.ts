@@ -3,12 +3,14 @@ import type { Mode } from '../../env';
 import type { Settings } from '../../lib/settings';
 import { RELATIONSHIP_LABELS, type SignatureWithAddress } from '../../lib/signatures';
 import { formatLongDate } from '../../lib/time';
+import { check } from '../icons';
 import { contactLinks, publicLayout, simplePage, type Html } from '../layout';
 
 export function thanksPage(settings: Settings, mode: Mode, emailOn: boolean): Html {
   const what = mode === 'pledge' ? 'pledge' : 'signature';
   const body = html`<div class="wrap narrow page-pad">
-    <div class="success-mark" aria-hidden="true">✓</div>
+    <div class="sheet">
+    <div class="success-mark">${check}</div>
     <h1>Thank you for your ${what}.</h1>
     <p class="lead">Your household’s ${what} has been recorded.</p>
     <h2>What happens next</h2>
@@ -29,6 +31,7 @@ export function thanksPage(settings: Settings, mode: Mode, emailOn: boolean): Ht
           The email also has a link to withdraw your ${what} at any time. If it does not arrive in a few minutes, check your spam folder.</p>`
       : html`<p>To withdraw your ${what}, contact the organizer: ${contactLinks(settings)}.</p>`}
     <p><a class="button" href="/">Back to the home page</a></p>
+    </div>
   </div>`;
   return publicLayout({ title: 'Thank you', settings, body });
 }
@@ -83,7 +86,7 @@ export function withdrawPage(settings: Settings, sig: SignatureWithAddress, toke
   return publicLayout({
     title: `Withdraw your ${what}`,
     settings,
-    body: html`<div class="wrap narrow page-pad"><h1>Withdraw your ${what}</h1>${content}</div>`,
+    body: html`<div class="wrap narrow page-pad"><div class="sheet"><h1>Withdraw your ${what}</h1>${content}</div></div>`,
   });
 }
 
@@ -102,7 +105,7 @@ export function unsubscribePage(settings: Settings, sid: string, sig: string, st
 export function privacyPage(settings: Settings): Html {
   const s = settings;
   const co = s.co_organizers.trim();
-  const body = html`<div class="wrap narrow page-pad prose">
+  const body = html`<div class="wrap narrow page-pad"><div class="sheet prose">
   <h1>Privacy notice</h1>
   <p class="muted">Last updated ${formatLongDate(`${s.privacy_updated}T17:00:00.000Z`)}</p>
 
@@ -153,14 +156,14 @@ export function privacyPage(settings: Settings): Html {
   <h2>Cookies</h2>
   <p>We do not use tracking cookies. The Turnstile anti-spam check may set a cookie it needs to work.
   The organizer’s admin pages use Cloudflare Access sign-in cookies.</p>
-</div>`;
+</div></div>`;
   return publicLayout({ title: 'Privacy notice', settings, body, active: 'privacy' });
 }
 
 export function faqPage(settings: Settings): Html {
   const s = settings;
   const qa = (q: string, a: Html) => html`<div class="faq-item"><h2>${q}</h2>${a}</div>`;
-  const body = html`<div class="wrap narrow page-pad prose">
+  const body = html`<div class="wrap narrow page-pad"><div class="sheet prose">
   <h1>Questions and answers</h1>
   ${qa(
     'Who runs this site?',
@@ -210,7 +213,7 @@ export function faqPage(settings: Settings): Html {
     'How do I withdraw?',
     html`<p>Use the withdraw link in your confirmation email, or contact the organizer.</p>`,
   )}
-</div>`;
+</div></div>`;
   return publicLayout({ title: 'Questions and answers', settings, body, active: 'faq' });
 }
 
