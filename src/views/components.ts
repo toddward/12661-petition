@@ -21,9 +21,9 @@ export function progressBar(p: Progress): Html {
   labels.push({ v: goal, text: `${goal}% goal`, anchor: goal > 85 ? 'end' : 'middle' });
   if (goal < 86) labels.push({ v: 100, text: '100%', anchor: 'end', cls: 'scale-label-end' });
   return html`<svg class="scale-bar" viewBox="0 0 ${W} 104" aria-hidden="true" focusable="false">
-    <defs><pattern id="pencil" patternUnits="userSpaceOnUse" width="200" height="200"><image href="/img/plates/pencil-vermilion.png" width="200" height="200"/></pattern></defs>
+    <defs><pattern id="hatch" patternUnits="userSpaceOnUse" width="22" height="22" patternTransform="rotate(-55)"><rect class="hatch-ink" width="10" height="22"/></pattern></defs>
     <rect class="scale-track" x="2" y="2" width="${W - 4}" height="48"/>
-    ${pct > 0 ? html`<rect class="scale-fill" x="2" y="2" width="${Math.max(0, x(pct) - 2)}" height="48" fill="url(#pencil)"/>
+    ${pct > 0 ? html`<rect class="scale-fill" x="2" y="2" width="${Math.max(0, x(pct) - 2)}" height="48" fill="url(#hatch)"/>
     <line class="scale-edge" x1="${x(pct)}" y1="2" x2="${x(pct)}" y2="50"/>` : ''}
     <line class="scale-goal" x1="${x(goal)}" y1="2" x2="${x(goal)}" y2="50"/>
     ${labels.map(
@@ -42,12 +42,12 @@ export function legend(p: Progress, cta: { href: string; label: string } | null)
     <div class="legend-top">
       <div class="legend-keycol">
         <h2 id="legend-h" class="legend-label">Legend</h2>
-        <p class="legend-key"><span class="key-swatch" aria-hidden="true"></span>Study area (illustration)</p>
+        <p class="legend-key"><span class="key-swatch" aria-hidden="true"></span><span>Study area <span class="key-note">(illustration)</span></span></p>
       </div>
       <div class="legend-tally">
         ${areaSet
           ? html`<p class="tally"><span class="tally-num">${p.signed}</span> <span class="tally-of">of</span> <span class="tally-num">${p.occupied_total}</span>
-              <span class="tally-unit">households ${verb} · Goal ${p.goal_percent}%</span></p>`
+              <span class="tally-unit">households ${verb} <span class="nowrap">· Goal ${p.goal_percent}%</span></span></p>`
           : html`<p class="tally-pending">Progress will appear once the petition area is set.</p>`}
       </div>
     </div>

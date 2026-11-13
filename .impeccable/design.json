@@ -1,0 +1,694 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-13T22:58:13+00:00",
+  "title": "Design System: Slow Down on Victory Lakes Loop",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Drafting Film",
+        "canonical": "#f7f7f3",
+        "oklch": "oklch(97.5% 0.005 106.5)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#252523",
+          "#42423f",
+          "#61615e",
+          "#82827f",
+          "#a5a5a2",
+          "#c9c9c7",
+          "#eeeeed"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Sheet",
+        "canonical": "#f7f7f3",
+        "oklch": "oklch(97.5% 0.005 106.5)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#252523",
+          "#42423f",
+          "#61615e",
+          "#82827f",
+          "#a5a5a2",
+          "#c9c9c7",
+          "#eeeeed"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field White",
+        "canonical": "#fdfdfb",
+        "oklch": "oklch(99.3% 0.003 106.4)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#252524",
+          "#424240",
+          "#616160",
+          "#828281",
+          "#a5a5a3",
+          "#c9c9c7",
+          "#eeeeec"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Navy Pen Ink",
+        "canonical": "#102a56",
+        "oklch": "oklch(29.3% 0.086 260.3)",
+        "tonalRamp": [
+          "#040b1a",
+          "#132442",
+          "#29426b",
+          "#446192",
+          "#6583b5",
+          "#8ba6d3",
+          "#b6caeb",
+          "#e6effd"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Faded Ink",
+        "canonical": "#3d4f6e",
+        "oklch": "oklch(42.6% 0.057 261.0)",
+        "tonalRamp": [
+          "#060b15",
+          "#1a2539",
+          "#32425d",
+          "#4f6282",
+          "#7083a4",
+          "#95a6c3",
+          "#bdcae0",
+          "#e9eff8"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Pen Rule",
+        "canonical": "#1d3a6b",
+        "oklch": "oklch(35.4% 0.092 260.2)",
+        "tonalRamp": [
+          "#030b1b",
+          "#112444",
+          "#27416e",
+          "#426195",
+          "#6383b8",
+          "#89a6d6",
+          "#b5caed",
+          "#e6effe"
+        ]
+      },
+      "rule-soft": {
+        "role": "neutral",
+        "displayName": "Soft Rule",
+        "canonical": "#b9c3d0",
+        "oklch": "oklch(81.3% 0.021 254.9)",
+        "tonalRamp": [
+          "#090b0f",
+          "#20262c",
+          "#3b434c",
+          "#59626d",
+          "#7a838f",
+          "#9ea6b0",
+          "#c4cad1",
+          "#eceff2"
+        ]
+      },
+      "lake": {
+        "role": "secondary",
+        "displayName": "Lake Hatch Blue",
+        "canonical": "#6f97b5",
+        "oklch": "oklch(65.8% 0.063 241.3)",
+        "tonalRamp": [
+          "#030c15",
+          "#0f2839",
+          "#24465e",
+          "#406682",
+          "#6187a4",
+          "#88aac3",
+          "#b5cde0",
+          "#e6f0f8"
+        ]
+      },
+      "vermilion": {
+        "role": "primary",
+        "displayName": "Boundary Vermilion",
+        "canonical": "#cf3a2c",
+        "oklch": "oklch(57.0% 0.188 29.5)",
+        "tonalRamp": [
+          "#1f0000",
+          "#4c0402",
+          "#800200",
+          "#b31a11",
+          "#da4a3b",
+          "#f77a69",
+          "#ffb3a7",
+          "#fee9e5"
+        ]
+      },
+      "vermilion-ink": {
+        "role": "primary",
+        "displayName": "Vermilion Ink",
+        "canonical": "#b3301f",
+        "oklch": "oklch(51.0% 0.170 30.9)",
+        "tonalRamp": [
+          "#1e0100",
+          "#4c0400",
+          "#7e0d01",
+          "#ad2a19",
+          "#d35340",
+          "#f1806d",
+          "#ffb3a5",
+          "#fee9e5"
+        ]
+      },
+      "vermilion-edge": {
+        "role": "primary",
+        "displayName": "Pencil Edge",
+        "canonical": "#8a2216",
+        "oklch": "oklch(42.1% 0.141 30.4)",
+        "tonalRamp": [
+          "#1e0100",
+          "#4b0602",
+          "#781b11",
+          "#a23a2c",
+          "#c75e4e",
+          "#e58878",
+          "#fbb5a9",
+          "#ffe9e5"
+        ]
+      },
+      "on-vermilion": {
+        "role": "primary",
+        "displayName": "On Vermilion",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "select": {
+        "role": "primary",
+        "displayName": "Red Pencil Selection",
+        "canonical": "#f3cfc8",
+        "oklch": "oklch(88.3% 0.042 30.9)",
+        "tonalRamp": [
+          "#120907",
+          "#32201c",
+          "#543b36",
+          "#775953",
+          "#997a74",
+          "#ba9d98",
+          "#d9c4c0",
+          "#f5ecea"
+        ]
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "Drafting Table (dark)",
+        "canonical": "#0f1a27",
+        "oklch": "oklch(21.4% 0.030 253.2)",
+        "tonalRamp": [
+          "#080b10",
+          "#1e262f",
+          "#384351",
+          "#556372",
+          "#768494",
+          "#9aa6b5",
+          "#c1cad5",
+          "#ebeff4"
+        ]
+      },
+      "sheet-dark": {
+        "role": "neutral",
+        "displayName": "Sheet (dark: stays light)",
+        "canonical": "#f2f2ec",
+        "oklch": "oklch(95.9% 0.008 106.5)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#252522",
+          "#42423e",
+          "#62625c",
+          "#83837d",
+          "#a5a5a1",
+          "#c9c9c6",
+          "#eeeeed"
+        ]
+      },
+      "field-dark": {
+        "role": "neutral",
+        "displayName": "Field (dark)",
+        "canonical": "#142233",
+        "oklch": "oklch(24.8% 0.038 253.9)",
+        "tonalRamp": [
+          "#070c12",
+          "#1c2632",
+          "#354354",
+          "#536377",
+          "#738498",
+          "#98a7b9",
+          "#bfcad8",
+          "#eaeff5"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Light Pen Ink (dark)",
+        "canonical": "#e8eef6",
+        "oklch": "oklch(94.7% 0.013 255.5)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#222529",
+          "#3e4248",
+          "#5d6268",
+          "#7e838a",
+          "#a1a5ac",
+          "#c6c9ce",
+          "#edeef0"
+        ]
+      },
+      "ink-soft-dark": {
+        "role": "neutral",
+        "displayName": "Faded Ink (dark)",
+        "canonical": "#b4c2d4",
+        "oklch": "oklch(80.9% 0.030 254.7)",
+        "tonalRamp": [
+          "#080b10",
+          "#1e262f",
+          "#384350",
+          "#566272",
+          "#778494",
+          "#9ba6b5",
+          "#c2cad5",
+          "#ebeff3"
+        ]
+      },
+      "rule-dark": {
+        "role": "neutral",
+        "displayName": "Pen Rule (dark)",
+        "canonical": "#a9bbd2",
+        "oklch": "oklch(78.6% 0.038 254.6)",
+        "tonalRamp": [
+          "#070c12",
+          "#1c2632",
+          "#354354",
+          "#536377",
+          "#738499",
+          "#98a7b9",
+          "#bfcad8",
+          "#eaeff5"
+        ]
+      },
+      "rule-soft-dark": {
+        "role": "neutral",
+        "displayName": "Soft Rule (dark)",
+        "canonical": "#33465d",
+        "oklch": "oklch(38.8% 0.046 253.6)",
+        "tonalRamp": [
+          "#060c13",
+          "#1a2635",
+          "#324358",
+          "#4f637b",
+          "#70849d",
+          "#95a7bd",
+          "#bdcbdb",
+          "#e9eff6"
+        ]
+      },
+      "vermilion-ink-dark": {
+        "role": "primary",
+        "displayName": "Vermilion Ink (dark)",
+        "canonical": "#ff8f80",
+        "oklch": "oklch(76.7% 0.138 28.7)",
+        "tonalRamp": [
+          "#1d0101",
+          "#4a0705",
+          "#771d16",
+          "#a13b31",
+          "#c65f52",
+          "#e4887b",
+          "#fab6ab",
+          "#fee9e5"
+        ]
+      },
+      "select-dark": {
+        "role": "primary",
+        "displayName": "Red Pencil Selection (dark)",
+        "canonical": "#5a2b28",
+        "oklch": "oklch(35.2% 0.070 25.0)",
+        "tonalRamp": [
+          "#150606",
+          "#3a1b19",
+          "#5f3431",
+          "#84514d",
+          "#a7736e",
+          "#c79793",
+          "#e3bfbc",
+          "#faeae9"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page H1; centred in the title block."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section H2s, usually a ruled heading."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "H3s."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All public reading text, 17px; prose capped at 68ch."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Subline under a page title."
+      },
+      "body-admin": {
+        "displayName": "Admin body",
+        "purpose": "Admin base size, 16px."
+      },
+      "field-label": {
+        "displayName": "Field label",
+        "purpose": "Form labels and fieldset legends."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Secondary buttons, uppercase."
+      },
+      "lettering": {
+        "displayName": "Lettering",
+        "purpose": "osifont site name in the header, uppercase."
+      },
+      "lettering-title": {
+        "displayName": "Lettering title",
+        "purpose": "The LEGEND title, uppercase and underlined; sheet-note titles use the same voice at 1.15rem, 0.05em."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "The primary action only; uppercase with a 0.45px text stroke."
+      },
+      "tally": {
+        "displayName": "Tally",
+        "purpose": "Household count in the legend; 1.85rem on phones; 0.4px text stroke."
+      }
+    },
+    "shadows": [
+      {
+        "name": "popup",
+        "value": "0 10px 24px -12px rgb(16 42 86 / 0.45)",
+        "purpose": "Address combobox listbox, the one thing that floats over the form (dark: rgb(0 0 0 / 0.8))."
+      },
+      {
+        "name": "sheet-on-table",
+        "value": "0 18px 40px -22px rgb(0 0 0 / 0.8)",
+        "purpose": "Dark mode only: the plat's light sheet lying on the dark drafting table."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-draw",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Expo-out for the scale-bar draw-in, button press and arrow nudge."
+      },
+      {
+        "name": "scale-draw-in",
+        "value": "1100ms cubic-bezier(0.16, 1, 0.3, 1) 200ms both; scaleX(0.02) to scaleX(1), origin left",
+        "purpose": "The legend's hatched fill draws in once; the only entrance motion."
+      },
+      {
+        "name": "button-state",
+        "value": "background-color 160ms ease-out, transform 160ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Button hover tint and 1px press."
+      },
+      {
+        "name": "arrow-nudge",
+        "value": "transform 200ms cubic-bezier(0.16, 1, 0.3, 1); translateX(4px)",
+        "purpose": "Primary action arrow on hover."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none; transition: none",
+        "purpose": "prefers-reduced-motion: reduce turns everything off."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "max-width: 379px",
+        "purpose": "Legend key column stacks over the tally; primary action tightens."
+      },
+      {
+        "name": "phone",
+        "value": "max-width: 639px",
+        "purpose": "Primary layout; first-sheet rule (plat, title block, legend, action within 844px)."
+      },
+      {
+        "name": "tablet",
+        "value": "min-width: 640px",
+        "purpose": "Three-part header; lower sections in two columns."
+      },
+      {
+        "name": "desktop",
+        "value": "min-width: 960px",
+        "purpose": "Plat left, title block and legend right; sheet notes as a four-column strip."
+      }
+    ],
+    "lineWeights": [
+      {
+        "name": "page-rule",
+        "value": "2px solid var(--rule)",
+        "purpose": "Header bottom, footer top."
+      },
+      {
+        "name": "pen-rule",
+        "value": "1.5px solid var(--rule)",
+        "purpose": "Frames, controls, ruled headings, sheet-note box."
+      },
+      {
+        "name": "inner-rule",
+        "value": "1px solid var(--rule-soft), inset 4px",
+        "purpose": "Inner line of every double rule; row dividers."
+      },
+      {
+        "name": "dashed-rule",
+        "value": "1.5px dashed var(--rule-soft)",
+        "purpose": "Reasons separators; notices use 1.5px dashed var(--rule)."
+      },
+      {
+        "name": "crop-tick",
+        "value": "9px overshoot past each corner",
+        "purpose": "Full frames only."
+      }
+    ],
+    "focus": {
+      "value": "outline: 3px solid var(--focus); outline-offset: 2px (fields: 1px)",
+      "light": "#cf3a2c",
+      "dark": "#ff8f80"
+    },
+    "textures": [
+      {
+        "name": "paper-texture",
+        "value": "url(/img/plates/ground-tile.png) repeat, 101px 58px",
+        "purpose": "Film grain on the public page ground; dropped in dark mode and the admin."
+      },
+      {
+        "name": "pencil-vermilion",
+        "value": "url(/img/plates/pencil-vermilion.png) repeat, 128px 128px",
+        "purpose": "Red-pencil shading on the primary action."
+      }
+    ],
+    "containers": [
+      {
+        "name": "wrap",
+        "value": "1180px"
+      },
+      {
+        "name": "narrow",
+        "value": "760px"
+      },
+      {
+        "name": "admin",
+        "value": "1320px"
+      },
+      {
+        "name": "prose",
+        "value": "68ch"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one action: vermilion under red-pencil shading, inked edge, osifont lettering. Signing only.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Sign the pledge<svg class=\"ds-icon\" viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15\"/><path d=\"M13 6l6 6-6 6\"/></svg></a>",
+      "css": ":host{--paper:#f7f7f3;--sheet:#f7f7f3;--field:#fdfdfb;--ink:#102a56;--ink-soft:#3d4f6e;--rule:#1d3a6b;--rule-soft:#b9c3d0;--vermilion:#cf3a2c;--vermilion-ink:#b3301f;--vermilion-edge:#8a2216;--on-vermilion:#fff;--focus:#cf3a2c;--font-display:\"Barlow Semi Condensed\",\"Barlow\",\"Arial Narrow\",sans-serif;--font-body:\"Barlow\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--font-letter:\"Osifont\",\"Barlow Semi Condensed\",\"Arial Narrow\",sans-serif;--tick:9px}.ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:58px;padding:10px 22px;border-radius:6px;border:1.5px solid var(--vermilion-edge);background:var(--vermilion) url(\"/img/plates/pencil-vermilion.png\") repeat;background-size:128px 128px;color:var(--on-vermilion);font:400 1.45rem/1.1 var(--font-letter);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;-webkit-text-stroke:.45px currentColor;cursor:pointer;transition:background-color 160ms ease-out,transform 160ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover{filter:brightness(.93)}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}.ds-btn-primary .ds-icon{width:1.25em;height:1.25em;transition:transform 200ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover .ds-icon{transform:translateX(4px)}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Pen-ruled outline button for every other action.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Back to the home page</a>",
+      "css": ":host{--paper:#f7f7f3;--sheet:#f7f7f3;--field:#fdfdfb;--ink:#102a56;--ink-soft:#3d4f6e;--rule:#1d3a6b;--rule-soft:#b9c3d0;--vermilion:#cf3a2c;--vermilion-ink:#b3301f;--vermilion-edge:#8a2216;--on-vermilion:#fff;--focus:#cf3a2c;--font-display:\"Barlow Semi Condensed\",\"Barlow\",\"Arial Narrow\",sans-serif;--font-body:\"Barlow\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--font-letter:\"Osifont\",\"Barlow Semi Condensed\",\"Arial Narrow\",sans-serif;--tick:9px}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:10px 22px;border-radius:6px;border:1.5px solid var(--rule);background:transparent;color:var(--ink);font:600 1.1rem/1.1 var(--font-display);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background-color 160ms ease-out,transform 160ms cubic-bezier(.16,1,.3,1)}.ds-btn:hover{background:color-mix(in srgb,var(--rule) 8%,transparent)}.ds-btn:active{transform:translateY(1px)}.ds-btn:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Secondary shape in vermilion ink, for withdrawing or rejecting a signature.",
+      "html": "<button class=\"ds-btn-danger\" type=\"button\">Withdraw my pledge</button>",
+      "css": ":host{--paper:#f7f7f3;--sheet:#f7f7f3;--field:#fdfdfb;--ink:#102a56;--ink-soft:#3d4f6e;--rule:#1d3a6b;--rule-soft:#b9c3d0;--vermilion:#cf3a2c;--vermilion-ink:#b3301f;--vermilion-edge:#8a2216;--on-vermilion:#fff;--focus:#cf3a2c;--font-display:\"Barlow Semi Condensed\",\"Barlow\",\"Arial Narrow\",sans-serif;--font-body:\"Barlow\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--font-letter:\"Osifont\",\"Barlow Semi Condensed\",\"Arial Narrow\",sans-serif;--tick:9px}.ds-btn-danger{display:inline-flex;align-items:center;min-height:48px;padding:10px 22px;border-radius:6px;border:1.5px solid var(--vermilion-ink);background:transparent;color:var(--vermilion-ink);font:600 1.1rem/1.1 var(--font-display);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:background-color 160ms ease-out,transform 160ms cubic-bezier(.16,1,.3,1)}.ds-btn-danger:hover{background:color-mix(in srgb,var(--rule) 8%,transparent)}.ds-btn-danger:active{transform:translateY(1px)}.ds-btn-danger:focus-visible{outline:3px solid var(--focus);outline-offset:2px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Label above, hint between, a field-white blank with a pen-rule border; vermilion focus ring; error state below.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-email\">Email</label><p class=\"ds-hint\">We send one confirmation email with a link to withdraw. No newsletters.</p><input id=\"ds-email\" type=\"email\"></div><div class=\"ds-field ds-has-error\"><label for=\"ds-name\">Full name</label><p class=\"ds-error\">Enter your full name.</p><input id=\"ds-name\" type=\"text\" aria-invalid=\"true\"></div>",
+      "css": ":host{--paper:#f7f7f3;--sheet:#f7f7f3;--field:#fdfdfb;--ink:#102a56;--ink-soft:#3d4f6e;--rule:#1d3a6b;--rule-soft:#b9c3d0;--vermilion:#cf3a2c;--vermilion-ink:#b3301f;--vermilion-edge:#8a2216;--on-vermilion:#fff;--focus:#cf3a2c;--font-display:\"Barlow Semi Condensed\",\"Barlow\",\"Arial Narrow\",sans-serif;--font-body:\"Barlow\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--font-letter:\"Osifont\",\"Barlow Semi Condensed\",\"Arial Narrow\",sans-serif;--tick:9px}.ds-field{display:grid;gap:6px;margin-bottom:28px;color:var(--ink);font-family:var(--font-body)}.ds-field label{font:600 1.15rem/1.2 var(--font-display);letter-spacing:.02em}.ds-hint{margin:0;color:var(--ink-soft);font-size:1rem}.ds-field input{width:100%;box-sizing:border-box;min-height:50px;padding:11px 14px;font:400 1.0625rem/1.55 var(--font-body);color:var(--ink);background:var(--field);border:1.5px solid var(--rule);border-radius:4px}.ds-field input:hover{border-color:var(--ink)}.ds-field input:focus-visible{outline:3px solid var(--focus);outline-offset:1px}.ds-has-error input{border:2px solid var(--vermilion-ink)}.ds-error{margin:0;color:var(--vermilion-ink);font-weight:600}"
+    },
+    {
+      "name": "Site Header",
+      "kind": "nav",
+      "description": "Ripple mark, two-line lettered name centred, osifont Sign link; closed by a 2px pen rule.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-brand\" href=\"#\" aria-label=\"Home\"><svg class=\"ds-mark\" viewBox=\"0 0 44 26\" width=\"44\" height=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M2 5c3.5-3 7-3 10.5 0s7 3 10.5 0 7-3 10.5 0 5.5 2.5 8.5 0\"/><path d=\"M2 13c3.5-3 7-3 10.5 0s7 3 10.5 0 7-3 10.5 0 5.5 2.5 8.5 0\"/><path d=\"M2 21c3.5-3 7-3 10.5 0s7 3 10.5 0 7-3 10.5 0 5.5 2.5 8.5 0\"/></svg></a><a class=\"ds-name\" href=\"#\"><span>Slow down on</span><span>Victory Lakes Loop</span></a><a class=\"ds-sign\" href=\"#\">Sign</a></header>",
+      "css": ":host{--paper:#f7f7f3;--sheet:#f7f7f3;--field:#fdfdfb;--ink:#102a56;--ink-soft:#3d4f6e;--rule:#1d3a6b;--rule-soft:#b9c3d0;--vermilion:#cf3a2c;--vermilion-ink:#b3301f;--vermilion-edge:#8a2216;--on-vermilion:#fff;--focus:#cf3a2c;--font-display:\"Barlow Semi Condensed\",\"Barlow\",\"Arial Narrow\",sans-serif;--font-body:\"Barlow\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--font-letter:\"Osifont\",\"Barlow Semi Condensed\",\"Arial Narrow\",sans-serif;--tick:9px}.ds-header{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;min-height:76px;padding:0 16px;border-bottom:2px solid var(--rule);background:var(--paper);color:var(--ink)}.ds-brand{display:inline-flex;align-items:center;min-height:44px;color:var(--ink)}.ds-mark{width:40px;height:auto}.ds-name{justify-self:center;text-align:center;text-decoration:none;text-transform:uppercase;font:400 1.1rem/1.12 var(--font-letter);letter-spacing:.07em;color:var(--ink)}.ds-name span{display:block}.ds-sign{justify-self:end;display:inline-flex;align-items:center;min-height:44px;font:400 1.25rem var(--font-letter);color:var(--ink);text-decoration-thickness:1.5px;text-underline-offset:5px}.ds-sign:hover,.ds-name:hover{text-decoration-color:var(--vermilion)}.ds-header a:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:2px}"
+    },
+    {
+      "name": "Legend",
+      "kind": "custom",
+      "refersTo": "frame",
+      "description": "Signature component: the plat's legend holds the key swatch, the household tally, the hatched scale bar and the primary action.",
+      "html": "<section class=\"ds-frame ds-legend\"><div class=\"ds-legend-top\"><div class=\"ds-keycol\"><h2 class=\"ds-legend-label\">Legend</h2><p class=\"ds-key\"><span class=\"ds-swatch\"></span><span>Study area <span class=\"ds-key-note\">(illustration)</span></span></p></div><p class=\"ds-tally\"><span class=\"ds-num\">40</span> <span class=\"ds-of\">of</span> <span class=\"ds-num\">173</span><span class=\"ds-unit\">households pledged · Goal 75%</span></p></div><svg class=\"ds-scale\" viewBox=\"0 0 1000 104\" aria-hidden=\"true\"><defs><pattern id=\"ds-hatch\" patternUnits=\"userSpaceOnUse\" width=\"22\" height=\"22\" patternTransform=\"rotate(-55)\"><rect class=\"ds-hatch-ink\" width=\"10\" height=\"22\"/></pattern></defs><rect class=\"ds-track\" x=\"2\" y=\"2\" width=\"996\" height=\"48\"/><rect class=\"ds-fill\" x=\"2\" y=\"2\" width=\"229\" height=\"48\" fill=\"url(#ds-hatch)\"/><line class=\"ds-edge\" x1=\"231\" y1=\"2\" x2=\"231\" y2=\"50\"/><line class=\"ds-goal\" x1=\"750\" y1=\"2\" x2=\"750\" y2=\"50\"/><text class=\"ds-scale-label\" x=\"2\" y=\"100\" text-anchor=\"start\">0%</text><text class=\"ds-scale-label\" x=\"500\" y=\"100\" text-anchor=\"middle\">50%</text><text class=\"ds-scale-label\" x=\"750\" y=\"100\" text-anchor=\"middle\">75% GOAL</text><text class=\"ds-scale-label\" x=\"998\" y=\"100\" text-anchor=\"end\">100%</text></svg><a class=\"ds-btn-primary\" href=\"#\">Sign the pledge<svg class=\"ds-icon\" viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15\"/><path d=\"M13 6l6 6-6 6\"/></svg></a><p class=\"ds-note\">About 2 minutes. One per household.</p></section>",
+      "css": ":host{--paper:#f7f7f3;--sheet:#f7f7f3;--field:#fdfdfb;--ink:#102a56;--ink-soft:#3d4f6e;--rule:#1d3a6b;--rule-soft:#b9c3d0;--vermilion:#cf3a2c;--vermilion-ink:#b3301f;--vermilion-edge:#8a2216;--on-vermilion:#fff;--focus:#cf3a2c;--font-display:\"Barlow Semi Condensed\",\"Barlow\",\"Arial Narrow\",sans-serif;--font-body:\"Barlow\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--font-letter:\"Osifont\",\"Barlow Semi Condensed\",\"Arial Narrow\",sans-serif;--tick:9px}.ds-frame{position:relative;border:1.5px solid var(--rule);padding:28px clamp(16px,5vw,32px);margin:var(--tick);color:var(--ink);background:var(--paper)}.ds-frame::before{content:\"\";position:absolute;inset:4px;border:1px solid var(--rule-soft);pointer-events:none}.ds-frame::after{content:\"\";position:absolute;inset:calc(-1 * var(--tick) - 1.5px);pointer-events:none;background:linear-gradient(var(--rule),var(--rule)) 0 var(--tick)/100% 1px no-repeat,linear-gradient(var(--rule),var(--rule)) 0 calc(100% - var(--tick))/100% 1px no-repeat,linear-gradient(var(--rule),var(--rule)) var(--tick) 0/1px 100% no-repeat,linear-gradient(var(--rule),var(--rule)) calc(100% - var(--tick)) 0/1px 100% no-repeat}.ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:58px;padding:10px 22px;border-radius:6px;border:1.5px solid var(--vermilion-edge);background:var(--vermilion) url(\"/img/plates/pencil-vermilion.png\") repeat;background-size:128px 128px;color:var(--on-vermilion);font:400 1.45rem/1.1 var(--font-letter);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;-webkit-text-stroke:.45px currentColor;cursor:pointer;transition:background-color 160ms ease-out,transform 160ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover{filter:brightness(.93)}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}.ds-btn-primary .ds-icon{width:1.25em;height:1.25em;transition:transform 200ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover .ds-icon{transform:translateX(4px)}.ds-legend{max-width:420px;padding-top:18px;font-family:var(--font-body)}.ds-legend-top{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:18px;margin-bottom:12px}.ds-keycol{border-right:1.5px solid var(--rule);padding-right:12px}.ds-legend-label{margin:0 0 12px;font:400 1.1rem var(--font-letter);text-transform:uppercase;letter-spacing:.16em;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:5px}.ds-key{display:grid;grid-template-columns:18px minmax(0,1fr);gap:7px;margin:0;font:400 1rem/1.25 var(--font-letter);text-transform:uppercase;letter-spacing:.04em;color:var(--ink-soft)}.ds-swatch{width:18px;height:3px;margin-top:.5em;background:var(--vermilion);border-radius:2px}.ds-key-note{text-transform:none;letter-spacing:0}.ds-tally{align-self:center;margin:0;font-family:var(--font-letter);line-height:1.15}.ds-num{font-size:2.15rem;font-variant-numeric:tabular-nums;-webkit-text-stroke:.4px currentColor}.ds-of{font-size:1.15rem;margin-inline:2px}.ds-unit{display:block;font-size:1.02rem;margin-top:2px}.ds-scale{display:block;width:100%;height:auto;margin:12px 0 6px;overflow:visible}.ds-track{fill:var(--sheet);fill-opacity:.2;stroke:var(--rule);stroke-width:3}.ds-hatch-ink{fill:var(--vermilion)}.ds-fill{opacity:.95;transform-box:fill-box;transform-origin:left center;animation:ds-draw 1100ms cubic-bezier(.16,1,.3,1) 200ms both}.ds-edge{stroke:var(--vermilion);stroke-width:3}.ds-goal{stroke:var(--rule);stroke-width:2.5}.ds-scale-label{fill:var(--ink);font-family:var(--font-letter);font-size:40px;letter-spacing:1px}@keyframes ds-draw{from{transform:scaleX(.02)}to{transform:scaleX(1)}}.ds-legend .ds-btn-primary{display:flex;width:100%;box-sizing:border-box}.ds-note{text-align:center;margin:12px 0 6px;font-size:1.05rem}@media (prefers-reduced-motion:reduce){.ds-fill,.ds-btn-primary,.ds-icon{animation:none;transition:none}}"
+    },
+    {
+      "name": "Sheet Notes",
+      "kind": "custom",
+      "refersTo": "note-number",
+      "description": "The county process as the plat's numbered notes; the current step wears the vermilion 'we are here' ring.",
+      "html": "<ol class=\"ds-notes\"><li class=\"ds-current\"><span class=\"ds-note-num\">1</span><div><h3><span class=\"ds-here\">We are here:</span> HOA board</h3><p>The HOA board considers supporting the request.</p></div></li><li><span class=\"ds-note-num\">2</span><div><h3>County speed study</h3><p>The county measures speed and traffic to confirm the street qualifies.</p></div></li></ol>",
+      "css": ":host{--paper:#f7f7f3;--sheet:#f7f7f3;--field:#fdfdfb;--ink:#102a56;--ink-soft:#3d4f6e;--rule:#1d3a6b;--rule-soft:#b9c3d0;--vermilion:#cf3a2c;--vermilion-ink:#b3301f;--vermilion-edge:#8a2216;--on-vermilion:#fff;--focus:#cf3a2c;--font-display:\"Barlow Semi Condensed\",\"Barlow\",\"Arial Narrow\",sans-serif;--font-body:\"Barlow\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--font-letter:\"Osifont\",\"Barlow Semi Condensed\",\"Arial Narrow\",sans-serif;--tick:9px}.ds-notes{list-style:none;padding:0;margin:0;border:1.5px solid var(--rule);color:var(--ink);font-family:var(--font-body)}.ds-notes li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;padding:12px 18px 12px 12px}.ds-notes li+li{border-top:1px solid var(--rule)}.ds-note-num{width:36px;height:36px;box-sizing:border-box;border:1.5px solid var(--rule);border-radius:50%;display:grid;place-items:center;font:400 1.2rem var(--font-letter);font-variant-numeric:tabular-nums}.ds-notes h3{margin:6px 0 4px;font:400 1.15rem/1.1 var(--font-letter);text-transform:uppercase;letter-spacing:.05em}.ds-notes p{margin:0;color:var(--ink-soft);font-size:1rem;line-height:1.55}.ds-current .ds-note-num{border:2px solid var(--vermilion);color:var(--vermilion-ink)}.ds-here{color:var(--vermilion-ink)}"
+    },
+    {
+      "name": "Admin Nav",
+      "kind": "nav",
+      "refersTo": "admin-nav-link",
+      "description": "Admin section strip: 44px links with a 3px bottom bar, vermilion for the current page.",
+      "html": "<nav class=\"ds-admin-nav\" aria-label=\"Admin\"><a href=\"#\" aria-current=\"page\">Dashboard</a><a href=\"#\">Signatures</a><a href=\"#\">Paper entry</a><a href=\"#\">Households</a></nav>",
+      "css": ":host{--paper:#f7f7f3;--sheet:#f7f7f3;--field:#fdfdfb;--ink:#102a56;--ink-soft:#3d4f6e;--rule:#1d3a6b;--rule-soft:#b9c3d0;--vermilion:#cf3a2c;--vermilion-ink:#b3301f;--vermilion-edge:#8a2216;--on-vermilion:#fff;--focus:#cf3a2c;--font-display:\"Barlow Semi Condensed\",\"Barlow\",\"Arial Narrow\",sans-serif;--font-body:\"Barlow\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--font-letter:\"Osifont\",\"Barlow Semi Condensed\",\"Arial Narrow\",sans-serif;--tick:9px}.ds-admin-nav{display:flex;gap:2px;overflow-x:auto;border-top:1px solid var(--rule-soft);border-bottom:2px solid var(--rule);background:var(--paper)}.ds-admin-nav a{white-space:nowrap;padding:12px 12px 10px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center;text-decoration:none;color:var(--ink);font:600 1.02rem var(--font-display);letter-spacing:.03em;border-bottom:3px solid transparent}.ds-admin-nav a:hover{border-bottom-color:var(--rule-soft)}.ds-admin-nav a[aria-current=\"page\"]{border-bottom-color:var(--vermilion)}.ds-admin-nav a:focus-visible{outline:3px solid var(--focus);outline-offset:-3px}"
+    },
+    {
+      "name": "Status Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Admin-only pill for signature status; vermilion ink only for rejected or flagged.",
+      "html": "<span class=\"ds-tag\">active</span> <span class=\"ds-tag ds-tag-muted\">withdrawn</span> <span class=\"ds-tag ds-tag-flag\">flagged</span>",
+      "css": ":host{--paper:#f7f7f3;--sheet:#f7f7f3;--field:#fdfdfb;--ink:#102a56;--ink-soft:#3d4f6e;--rule:#1d3a6b;--rule-soft:#b9c3d0;--vermilion:#cf3a2c;--vermilion-ink:#b3301f;--vermilion-edge:#8a2216;--on-vermilion:#fff;--focus:#cf3a2c;--font-display:\"Barlow Semi Condensed\",\"Barlow\",\"Arial Narrow\",sans-serif;--font-body:\"Barlow\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--font-letter:\"Osifont\",\"Barlow Semi Condensed\",\"Arial Narrow\",sans-serif;--tick:9px}.ds-tag{display:inline-block;padding:1px 8px;border:1px solid var(--rule);border-radius:999px;font:600 .85rem var(--font-display);letter-spacing:.03em;white-space:nowrap;color:var(--ink)}.ds-tag-muted{border-color:var(--rule-soft);color:var(--ink-soft)}.ds-tag-flag{border-color:var(--vermilion-ink);color:var(--vermilion-ink)}"
+    },
+    {
+      "name": "Error Summary",
+      "kind": "custom",
+      "description": "Focus-on-load summary of form errors, each linked to its field.",
+      "html": "<div class=\"ds-error-summary\" role=\"alert\" tabindex=\"-1\"><h2>Please fix the following</h2><ul><li><a href=\"#\">Choose your address from the list.</a></li><li><a href=\"#\">Type your full name as your signature.</a></li></ul></div>",
+      "css": ":host{--paper:#f7f7f3;--sheet:#f7f7f3;--field:#fdfdfb;--ink:#102a56;--ink-soft:#3d4f6e;--rule:#1d3a6b;--rule-soft:#b9c3d0;--vermilion:#cf3a2c;--vermilion-ink:#b3301f;--vermilion-edge:#8a2216;--on-vermilion:#fff;--focus:#cf3a2c;--font-display:\"Barlow Semi Condensed\",\"Barlow\",\"Arial Narrow\",sans-serif;--font-body:\"Barlow\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--font-letter:\"Osifont\",\"Barlow Semi Condensed\",\"Arial Narrow\",sans-serif;--tick:9px}.ds-error-summary{border:2px solid var(--vermilion-ink);padding:18px;background:color-mix(in srgb,var(--vermilion) 6%,transparent);color:var(--ink);font-family:var(--font-body)}.ds-error-summary:focus{outline:3px solid var(--focus);outline-offset:3px}.ds-error-summary h2{margin:0 0 12px;font:600 1.35rem/1.1 var(--font-display);color:var(--vermilion-ink)}.ds-error-summary ul{margin:0;padding-left:1.3em}.ds-error-summary a{color:var(--vermilion-ink);font-weight:600;text-decoration-thickness:1.5px;text-underline-offset:3px}.ds-error-summary a:focus-visible{outline:3px solid var(--focus);outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Subdivision Plat",
+    "overview": "The petition is about our own streets, so every page is a sheet of the neighborhood plat. The ground is cool drafting film with a faint paper grain; everything is drawn in navy pen; one vermilion pencil line marks the boundary, and that same colour marks the one thing to do. The site's parts are the sheet's parts: a title block for the headline, a legend for the count and the action, numbered sheet notes for the county process, a scale bar for progress. Nothing is a card, a hero or a badge.\n\nDensity is calm and generous on the public pages (17px body, 44px section gaps, a single reading column on phones) and tighter in the admin, which is the same sheet set for work. The world refuses the petition-platform template (photo hero, solid red progress bar, a row of equal cards) and refuses anything that could read as an official county, VDOT or HOA document: there are no seals, crests or agency logos, only the three-ripple lake mark.\n\nImagery is drawn, never photographed: the plat itself, two small pen illustrations (a school bus with walking children, a car with speed lines), and two texture plates (the film ground and the vermilion pencil shading). Every shipping raster carries its provenance prompt.",
+    "keyCharacteristics": [
+      "Drafting-film paper, navy pen linework, one vermilion boundary colour.",
+      "Containers are pen-ruled frames: a double rule with crop ticks at the corners, never a rounded card.",
+      "Three voices of type: engineering lettering (osifont) for the sheet's labels and the action, Barlow Semi Condensed for headings, Barlow for reading.",
+      "Flat sheet; depth comes from pen weight, not shadow.",
+      "Dark mode is a light sheet lying on a dark drafting table.",
+      "Strict CSP shapes the craft: no inline styles or scripts; geometry lives in SVG attributes, colour in CSS."
+    ],
+    "rules": [
+      {
+        "name": "The One Boundary Rule",
+        "body": "Vermilion is the boundary line, and only things that belong to the boundary or call for a hand may wear it: the boundary and its key swatch, the scale fill, the one primary action, the \"we are here\" marker, focus and errors. Checked controls, the active option, the caret and the link-hover underline echo it at hairline weight. Never use it for a heading, a background, an icon, a decorative line or a second accent.",
+        "section": "colors"
+      },
+      {
+        "name": "The Navy Pen Rule",
+        "body": "Every line, letter and icon is drawn in the one navy ink (or its light-ink counterpart in dark mode). No greys, no black, no second ink colour. The county print view is the one exception.",
+        "section": "colors"
+      },
+      {
+        "name": "The Light Sheet Rule",
+        "body": "In dark mode the page becomes a dark drafting table, but the plat keeps its light sheet: 12px of sheet margin, 3px corners, and a soft drop shadow beneath it. Pen-drawn rasters swap to their light-ink variants through `<picture>` sources keyed on `prefers-color-scheme`. The plat's caption keeps the light sheet's faded ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Lettering Rule",
+        "body": "osifont is the sheet's hand: it sets the site name, the legend, key and sheet-note titles, the tally, the scale labels, the plat caption and the primary action. Nothing else. Headings are Barlow Semi Condensed 600; reading text, form inputs and labels' helper text are Barlow.",
+        "section": "typography"
+      },
+      {
+        "name": "The Floor Rule",
+        "body": "Reading text is never smaller than 16px; the body is 17px. Lettering that has to be read (captions, keys, fine print) obeys the same floor.",
+        "section": "typography"
+      },
+      {
+        "name": "The First Sheet Rule",
+        "body": "On a phone the plat, its caption, the title block, the legend and the primary action all land inside the first 844px. Anything added above the legend must earn its height against that line.",
+        "section": "layout"
+      },
+      {
+        "name": "The Weight Budget Rule",
+        "body": "A public page weighs under 150KB, not counting Turnstile. The four fonts (about 75KB) and the plat (17KB at 420w, 40KB at 840w) are most of that already; a new raster has to be palette-quantized to fit.",
+        "section": "layout"
+      },
+      {
+        "name": "The Pen-Weight Rule",
+        "body": "Depth is drawn, not cast: 2px closes the page, 1.5px draws a part, 1px or dashed divides inside it. A shadow is allowed only on something that physically lifts off the sheet.",
+        "section": "elevation-depth"
+      },
+      {
+        "name": "The Crop Tick Rule",
+        "body": "Only the important parts of a sheet get the full double rule with crop ticks: the title block, the legend, the first lower section, the petition statement and the signing form. Later sections open with a top double rule alone so the page can breathe. Content pages (FAQ, privacy, thanks, withdraw) use the double rule without ticks.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do draw every container as a part of the sheet: a 1.5px pen rule with a 1px soft rule inset 4px, crop ticks 9px past the corners for the parts that matter, a top double rule alone for the rest.",
+      "Do caption the plat, every time it appears, with \"Illustration only. The county sets the real petition area.\"",
+      "Do keep reading text at 16px or larger (body is 17px) and every target at least 44px tall (the primary action is 58px, fields 50px, secondary buttons 48px).",
+      "Do set SVG geometry with attributes and all colour with CSS classes; the CSP allows no inline styles and no inline scripts.",
+      "Do keep the plat on its light sheet in dark mode, and ship a light-ink `-dark` variant for every pen-drawn raster, swapped with a `<picture>` source.",
+      "Do draw icons from the authored set (24 grid, 1.75 stroke, `currentColor`, `aria-hidden`), or add to it in the same hand.",
+      "Do embed the generation or derivation prompt in every shipping raster and palette-quantize it before it ships.",
+      "Do keep a public page under 150KB, not counting Turnstile.",
+      "Do honour `prefers-reduced-motion` by turning off every animation and transition; the scale-bar draw-in is the only entrance motion."
+    ],
+    "donts": [
+      "Don't use vermilion outside the One Boundary Rule: no vermilion headings, backgrounds, icons, decorative lines or second accent colour.",
+      "Don't set body copy, headings or form labels in osifont; it is lettering for labels, the tally, the scale, the caption and the action only.",
+      "Don't label anything on the plat except Victory Lakes Loop, invent street or lake names, or present the drawing as the real petition area.",
+      "Don't put an eyebrow or kicker label above a heading. Lettered uppercase belongs to the sheet's own parts (site name, legend title, key, sheet-note titles, scale), which are the label, not a preface to one.",
+      "Don't use Unicode glyphs (★, ✓, →, ▸) as icons.",
+      "Don't add county, VDOT or HOA seals, logos or anything that looks like an official crest; the ripple mark is the only mark.",
+      "Don't round frames or float them on shadows; only the combobox popup and the dark-mode plat sheet may cast one.",
+      "Don't fall back to the petition-platform template: a photo hero, a solid red progress bar, a row of equal cards."
+    ]
+  }
+}
